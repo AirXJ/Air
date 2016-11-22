@@ -1,1 +1,1 @@
-![](/assets/UILable属性描述.png)
+![](assets/UILable属性描述.png)
