@@ -5,5 +5,6 @@
     * [UIView+StoryBoard](第一天.md)
     * [UIViewController](uiviewcontroller.md)
     * [UIImageView](uiimageview.md)
+    * [UILabel](uilabel.md)
 * [高级UI](高级ui.md)
 
