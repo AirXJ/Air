@@ -1,4 +1,4 @@
-`最先调用的方法`
+`调用的方法的顺序`
 ```obj/*
 - (void)loadView{
 
@@ -31,6 +31,7 @@
 }
 
 
+－ **`只有在这个方法中能删除self.view，它的父控件是UIWindow`**
 - (void)viewDidAppear:(BOOL)animated{
  [super viewDidAppear:animated];
 
