@@ -3,7 +3,7 @@
 - `重用标志`用`static`关键字修饰可以提高方法运行效率
 
 
-```
+```obj
 //注册方法别写在cellForRowIndexPath方法里，一般在ViewDidLoad里
 [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 
