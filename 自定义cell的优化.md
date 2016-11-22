@@ -4,7 +4,7 @@
 
 
 ```
-//注册方法别写在cellForRowIndexPath方法里
+//注册方法别写在cellForRowIndexPath方法里，一般在ViewDidLoad里
 [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 
 static ID = @"indentifier";
