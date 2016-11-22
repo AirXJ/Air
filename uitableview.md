@@ -1,4 +1,28 @@
-- 代理方法 
+### - tableview的属性
+
+```
+// 设置tableView每一行cell的高度
+    self.tableView.rowHeight = 100;
+    
+    // 设置tableView每一组的头部高度
+    self.tableView.sectionHeaderHeight = 80;
+    // 设置tableView每一组的尾部高度
+//    self.tableView.sectionFooterHeight = 80;
+    
+    // 设置分割线的颜色
+//    self.tableView.separatorColor = [UIColor redColor];
+    
+    // 设置分割线的样式
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // 设置表头控件
+    self.tableView.tableHeaderView = [[UISwitch alloc] init];
+    // 设置表尾控件
+    self.tableView.tableFooterView = [[UISwitch alloc] init];
+```
+
+
+###  代理方法 
 
 ```
  /** 
