@@ -4,3 +4,7 @@
   - 故事板注册 
   - 代码注册 
   - 自己new
+
+## cell的一些属性
+`优先级是backgroudview高`
+![](/assets/cell背景色设置.png)
