@@ -8,3 +8,4 @@
 ## cell的一些属性
 `优先级是backgroudview高`
 ![](/assets/cell背景色设置.png)
+cell.selectionstyle = UITableViewCellSelectionStyleNone;
