@@ -26,8 +26,8 @@
 
 # 在控制器中
 
-* 实现一个反悔cell高度的代理方法\(这个方法会被cellForRowAtIndexPath不停的调用，包括layoutsubviews方法\)
-
+* 实现一个返回cell高度的代理方法，开始的时候有多少个cell模型就调用多少次该方法，然后拿一个cell就调一次，顺序是cellForRowAtIndexPath、
+set数据模型、heightForRowAtIndexPath，执行布满一个屏幕的cell的次数，然后调用一个屏幕的cell个数的layoutsubviews方法。所以你在这个方法里调cellForRowAtIndexPath肯定崩。
   * 在这个方法中返回indexpath位置对应cell的高度
     \`\`\`
   * \(CGFloat\)tableView:\(UITableView _\)tableView heightForRowAtIndexPath:\(NSIndexPath _\)indexPath{
