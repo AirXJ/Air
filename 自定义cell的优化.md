@@ -4,6 +4,8 @@
 - `- (void)layoutSubviews` `- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath`如果frame计算写在这两个方法中，影响性能非常严重，我们把计算的方法放到模型数组中，只需要计算一次。
 
 
+
+
 ```obj
 //注册方法别写在cellForRowIndexPath方法里，一般在ViewDidLoad里
 [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
