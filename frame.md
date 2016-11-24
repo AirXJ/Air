@@ -1,7 +1,7 @@
 # 给模型类增加frame属性
 
-* 所有子控件的frame
-* cell的高度\(cellHeight\)
+* 添加所有子控件的frame
+* 添加cell的高度\(cellHeight\)属性
 
 ```
 //模型层
@@ -50,10 +50,12 @@
 # 新建一个继承自UITableViewCell的子类，比如XMGStatusCell
 
 * 在initWithStyle:reuseIdentifier:方法中
-* 添加子控件
-* 设置子控件的初始化属性\(比如文字颜色、字体\)
+  * 添加子控件
+  * 设置子控件的初始化属性\(比如文字颜色、字体\)
 
 * 需要提供一个模型数据属性，重写模型数据的set方法
 
 * 重写layoutSubviews方法，一定要加上\[super layoutSubviews\];
+  - 将数据层定义的frame赋给cell层的子控件的frame属性
+
 
