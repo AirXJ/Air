@@ -33,6 +33,7 @@ return _cellHeight;
 }
 ``` 
 - 给cell传递模型数据
+
 ```
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  XMGStatusTableViewCell *cell = [XMGStatusTableViewCell initWithTableView:tableView];
@@ -40,3 +41,13 @@ return _cellHeight;
  return cell;
 }
 ```
+
+# 新建一个继承自UITableViewCell的子类，比如XMGStatusCell
+
+ * 在initWithStyle:reuseIdentifier:方法中
+ * 添加子控件
+ * 设置子控件的初始化属性\(比如文字颜色、字体\)
+
+- 需要提供一个模型数据属性，重写模型数据的set方法
+
+
