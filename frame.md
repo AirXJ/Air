@@ -49,5 +49,5 @@ return _cellHeight;
  * 设置子控件的初始化属性\(比如文字颜色、字体\)
 
 - 需要提供一个模型数据属性，重写模型数据的set方法
-
+- 重写layoutSubviews方法，一定要加上[super layoutSubviews];
 
