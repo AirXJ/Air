@@ -10,3 +10,6 @@ self.tableView.estimatedRowHeight = 44;
 ```
 
 - 将storyboard中的约束连线，在自定义cell类的模型数据的set方法中修改约束为0
+
+# iOS8之前
+![](/assets/iOS8之前，不等高cell的自动设置行高.png)
