@@ -1,6 +1,6 @@
 # 对比自定义等高cell，需要几个额外的步骤\(iOS8开始才支持\)
 
-* 添加子控件和contentView之间的间距约束，label约束右边可以不约束
+* 添加子控件和contentView之间的间距约束，storyboard的label约束右边可以不约束，xib不会出错。
 
 * 设置tableViewCell的真实行高和估算行高，这2句叫做`self-sizing技术，自动计算行高(iOS8 以后)`
 
