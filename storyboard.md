@@ -2,7 +2,7 @@
 - 添加子控件和contentView之间的间距约束
  
 
-- 设置tableViewCell的真实行高河估算行高，`self-sizing技术，自动计算行高(iOS8 以后)`
+- 设置tableViewCell的真实行高和估算行高，这2句叫做`self-sizing技术，自动计算行高(iOS8 以后)`
 ```
 // 告诉tableView所有cell的真实高度是根据设置的约束自动计算的
 self.tableView.rowHeight = UITableViewAutomaticDimension;
