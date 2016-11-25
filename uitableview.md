@@ -1,3 +1,5 @@
+方法执行顺序 heightForRowAtIndexPath/estimatedHeightForRowAtIndexPath、cellForRowAtIndexPath(、set模型数据、layout[self layoutIfNeeded手动调用];、heightForRowAtIndexPath、layout[自动布局自动调用]
+
 ### - tableview的属性
 
 ```
