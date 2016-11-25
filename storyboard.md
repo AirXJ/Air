@@ -14,4 +14,5 @@ self.tableView.estimatedRowHeight = 44;
 # iOS8之前，将自定义cell的IBLayOut属性放到头文件中
 - 添加各种约束，但是最后底部控件到底部的那条约束千万别添加进去
 - 还要将自定义cell的子控件放到头文件里去
-![](/assets/ios8之前.png)
+- 
+![](/assets/ios8之前.png)这个label不会布局，没有最大宽度属性，平时故事板上都自动带有，这里要手动填写；这里而且不会刷新布局，所以没法得到frame，所以要强制刷新，然后可以得到行高。
