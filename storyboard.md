@@ -1,6 +1,6 @@
 # 对比自定义等高cell，需要几个额外的步骤\(iOS8开始才支持\)
 
-* 添加子控件和contentView之间的间距约束
+* 添加子控件和contentView之间的间距约束，label约束右边可以不约束
 
 * 设置tableViewCell的真实行高和估算行高，这2句叫做`self-sizing技术，自动计算行高(iOS8 以后)`
 
@@ -17,14 +17,15 @@
 
 * 添加各种约束，但是最后底部控件到底部的那条约束千万别添加进去
 * 模型类里添加cellHeight属性，在自定义cell类的模型的set方法中给模型类的cellHeight属性
- ```
- [self layoutIfNeeded];
- if (!self.status.picture) {
- _status.cellHeight = CGRectGetMaxY(self.textContent.frame)+10;
- }else{
- _status.cellHeight = CGRectGetMaxY(self.picView.frame)+10;
- }
-```
+  ```
+  [self layoutIfNeeded];
+  if (!self.status.picture) {
+  _status.cellHeight = CGRectGetMaxY(self.textContent.frame)+10;
+  }else{
+  _status.cellHeight = CGRectGetMaxY(self.picView.frame)+10;
+  }
+  ```
+
 
 ```
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
