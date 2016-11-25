@@ -13,30 +13,39 @@ self.tableView.estimatedRowHeight = 44;
 
 # iOS8之前，将自定义cell的IBLayOut属性放到头文件中
 - 添加各种约束，但是最后底部控件到底部的那条约束千万别添加进去
-- 还要将自定义cell的子控件放到头文件里去
-- 
-![](/assets/ios8之前.png)这个label不会布局，没有最大宽度属性，平时故事板上都自动带有，这里要手动填写；这里而且不会刷新布局，所以没法得到frame，所以要强制刷新，然后可以得到行高。
+- 设置get方法，头文件别忘添加声明
+```
+-(CGFloat)cellHeight{
+    //要计算控件的frame必须刷新，不然就刷不出子控件的frame
+    [self layoutIfNeeded];
+    CGFloat cellHeight = 0;
+    if (!self.status.picture) {
+        cellHeight = CGRectGetMaxY(self.textContent.frame)+10;
+    }else{
+        cellHeight = CGRectGetMaxY(self.picView.frame)+10;
+    }
+    return cellHeight;
+}
+```
 
 ```
 XMGStatusTableViewCell *cell;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
- NSLog(@"aaa----%zd",indexPath.row);
- static NSString *iDentifier = @"statuses";
- if (cell == nil) {
- cell = [self.tableView dequeueReusableCellWithIdentifier:iDentifier];
- }
- cell.status = self.statuses[indexPath.row];
- cell.textContent.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width- 20.0;
- //要计算控件的frame必须刷新，不然就刷不出label
- [cell layoutIfNeeded];
- CGFloat cellHeight = 0;
- if (!cell.status.picture) {
- cellHeight = CGRectGetMaxY(cell.textContent.frame)+10;
- }else{
- cellHeight = CGRectGetMaxY(cell.picView.frame)+10;
- }
- return cellHeight;
+    static NSString *iDentifier = @"statuses";
+    if (cell == nil) {
+        cell = [self.tableView dequeueReusableCellWithIdentifier:iDentifier];
+    }
+    cell.status = self.statuses[indexPath.row];
+    return cell.cellHeight;
 }
+```
 
+```
+//从xib或storyboard加载控件，只调用一次
+- (void)awakeFromNib{
+    [super awakeFromNib];
+    //手动设置label的最大宽度属性(让label能够计算出自己最真实的尺寸)
+    self.textContent.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width- 20.0;
+}
 ```
 - 调用estimatedHeightForRowAtIndexPath方法，或者使用self.tableView.estimatedRowHeight = ??，这样会快速加载提高性能;
