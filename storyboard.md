@@ -17,4 +17,4 @@ self.tableView.estimatedRowHeight = 44;
 - 
 ![](/assets/ios8之前.png)这个label不会布局，没有最大宽度属性，平时故事板上都自动带有，这里要手动填写；这里而且不会刷新布局，所以没法得到frame，所以要强制刷新，然后可以得到行高。
 
-- heightForRowAtIndexPath这个方法会调用所有的cell个数次数，直到计算出滚动条的长度，然后才开始调用cellForRowAtIndexPath方法，我们只要调用estimatedHeightForRowAtIndexPath方法，就只会调用铺满一个屏幕的cell，不会再加载所有cell了，系统会帮助我们估算出滚动条的大小,会执将heightForRowAtIndexPath替换成estimatedHeightForRowAtIndexPath，提高了性能。
+- 调用estimatedHeightForRowAtIndexPath方法，或者使用self.tableView.estimatedRowHeight = ??，这样会快速加载提高性能;
