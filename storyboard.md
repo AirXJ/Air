@@ -13,5 +13,5 @@ self.tableView.estimatedRowHeight = 44;
 
 # iOS8之前，将自定义cell的IBLayOut属性放到头文件中
 - 添加各种约束，但是最后底部控件到底部的那条约束千万别添加进去
-- 还要讲自定义cell的子控件放到头文件里去
+- 还要将自定义cell的子控件放到头文件里去
 ![](/assets/ios8之前.png)
