@@ -1,0 +1,12 @@
+# 对比自定义等高cell，需要几个额外的步骤(iOS8开始才支持)
+- 添加自空间和contentView之间的间距约束
+ 
+
+- 设置tableViewCell的真实行高河估算行高，`self-sizing技术，自动计算行高(iOS8 以后)`
+```
+// 告诉tableView所有cell的真实高度是根据设置的约束自动计算的
+self.tableView.rowHeight = UITableViewAutomaticDimension;
+self.tableView.estimatedRowHeight = 44;
+```
+
+- 将storyboard中的约束连线，在自定义cell类的模型数据的set方法中修改约束为0
