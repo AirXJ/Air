@@ -12,4 +12,5 @@ self.tableView.estimatedRowHeight = 44;
 - 将storyboard中的约束连线，在自定义cell类的模型数据的set方法中修改约束为0
 
 # iOS8之前，将自定义cell的IBLayOut属性放到头文件中
+- 还要讲自定义cell的子控件放到头文件里去
 ![](/assets/ios8之前.png)
