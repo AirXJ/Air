@@ -16,5 +16,26 @@ self.tableView.estimatedRowHeight = 44;
 - 还要将自定义cell的子控件放到头文件里去
 - 
 ![](/assets/ios8之前.png)这个label不会布局，没有最大宽度属性，平时故事板上都自动带有，这里要手动填写；这里而且不会刷新布局，所以没法得到frame，所以要强制刷新，然后可以得到行高。
+```
+XMGStatusTableViewCell *cell;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+ NSLog(@"aaa----%zd",indexPath.row);
+ static NSString *iDentifier = @"statuses";
+ if (cell == nil) {
+ cell = [self.tableView dequeueReusableCellWithIdentifier:iDentifier];
+ }
+ cell.status = self.statuses[indexPath.row];
+ cell.textContent.preferredMaxLayoutWidth = [UIScreen mainScreen].bounds.size.width- 20.0;
+ //要计算控件的frame必须刷新，不然就刷不出label
+ [cell layoutIfNeeded];
+ CGFloat cellHeight = 0;
+ if (!cell.status.picture) {
+ cellHeight = CGRectGetMaxY(cell.textContent.frame)+10;
+ }else{
+ cellHeight = CGRectGetMaxY(cell.picView.frame)+10;
+ }
+ return cellHeight;
+}
 
+```
 - 调用estimatedHeightForRowAtIndexPath方法，或者使用self.tableView.estimatedRowHeight = ??，这样会快速加载提高性能;
