@@ -16,6 +16,7 @@ self.tableView.estimatedRowHeight = 44;
 - 还要将自定义cell的子控件放到头文件里去
 - 
 ![](/assets/ios8之前.png)这个label不会布局，没有最大宽度属性，平时故事板上都自动带有，这里要手动填写；这里而且不会刷新布局，所以没法得到frame，所以要强制刷新，然后可以得到行高。
+
 ```
 XMGStatusTableViewCell *cell;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
