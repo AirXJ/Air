@@ -1,6 +1,9 @@
 #4.如何监听UIView的触摸事件?
     	想要监听UIViiew的触摸事件,首先第一步要自定义UIView,
     	因为只有实现了UIResponder的事件方法才能够监听事件.
+        为什么说继承了UIResponder就能够处理事件? 
+        因为UIResponder内部提供了以下方法来处理事件
+
 ```
 //当开始触摸屏幕的时候调用
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
