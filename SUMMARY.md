@@ -6,6 +6,7 @@
         * [transform](transform.md)
         * [UITouch](uitouch.md)
         * [UIEvent](uievent.md)
+        * [UIRespond](uirespond.md)
         * [UIStoryBoard](uistoryboard.md)
     * [UIViewController](uiviewcontroller.md)
     * [UIImageView](uiimageview.md)
