@@ -20,6 +20,7 @@ UIApplication会从事件队列中取出最前面的事件，并将事件分发�
 
 * UIView不能接收触摸事件的三种情况：
   * 如果一个父控件不能接收事件,那么它里面的了子控件也不能够接收事件.
+  - CGPoint childP = [self convertPoint:point toView:chileV];`**判断必须用自己的坐标系**`
     * 隐藏：如果把父控件隐藏，那么子控件也会隐藏，隐藏的控件不能接受事件
     * 不允许交互：userInteractionEnabled = NO
     * 透明度：如果设置一个控件的透明度&lt;0.01，会直接影响子控件的透明度。alpha：0.0~0.01为透明。
