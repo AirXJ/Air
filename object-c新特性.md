@@ -1,6 +1,7 @@
 ### Object-C常见关键字用法
 
 ```
+在.h文件或者.m中声明，然后在类型参数中使用，
 null_resettable:必须要处理为空情况,重写get方法,这个关键字只能在括号里写
 null_resettable作用:get方法不能返回nil,set可以传入为空
 _Null_unspecified:不确定是否为空
