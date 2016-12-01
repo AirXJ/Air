@@ -42,7 +42,12 @@ __contravariant:逆变,父类转子类,记忆方法，大逆不道
 
 ### 关键字__kindof:相当于
 表示当前类或者它的子类
-其他知识扩展:id（xcode 5）和instancetype的区别，编译时检查识别当前类的对象。id可以调用任何对象的方法，不能在编译时检测。但是instancetype不会提示是哪个类的对象，
+其他知识扩展:id（xcode 5）和instancetype的区别，编译时检查识别当前类的对象。id可以调用任何对象的方法，不能在编译时检测。但是instancetype不会提示是哪个类的对象
+开发中用哪个取决自己
+```
++ (__kindof Person *)person;
++ (instancetype)person;
+```
 
 
 
