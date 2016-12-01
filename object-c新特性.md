@@ -13,3 +13,11 @@ _Null_unspecified:不确定是否为空
  nonnull 语法3 这个写法不推荐，不能上架
  @property (nonatomic, strong) NSString * __nonnull name;
 ```
+
+
+# 泛型声明定义
+//声明
+@interface Person<ObjectType> : NSObject
+//定义，如果没有定义泛型.默认就是id，就没法用点语法了。
+ Person<iOS *> *p = [[Person alloc] init];
+ p.language = ios;
