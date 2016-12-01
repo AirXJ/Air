@@ -26,5 +26,10 @@ _Null_unspecified:不确定是否为空
 ```
 
 ### 泛型中用于父子类型的转换
-__convariant:协变
-__contravariant:逆变
+```
+__covariant:协变,子类转父类，记忆方法，正常，人都会做父亲
+__contravariant:逆变,父类转子类,记忆方法，大逆不道
+@interface Person<__covariant ObjectType> : NSObject
+ 泛型注意点:在数组中,一般用可变数组添加方法,泛型才会生效,如果使用不可变数组,添加元素,泛型没有效果
+
+```
