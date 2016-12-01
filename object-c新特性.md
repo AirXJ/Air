@@ -1,3 +1,4 @@
+### Object-C常见关键字用法
 ```
 null_resettable:必须要处理为空情况,重写get方法,这个关键字只能在括号里写
 null_resettable作用:get方法不能返回nil,set可以传入为空
@@ -15,7 +16,7 @@ _Null_unspecified:不确定是否为空
 ```
 
 
-# 泛型声明定义
+### 泛型声明定义
 //声明
 @interface Person<ObjectType> : NSObject
 //定义，如果没有定义泛型.默认就是id，就没法用点语法了。
