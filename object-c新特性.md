@@ -16,9 +16,15 @@ _Null_unspecified:不确定是否为空
 ```
 
 
-### 泛型声明定义
+## 泛型声明定义
+```
 //声明
 @interface Person<ObjectType> : NSObject
 //定义，如果没有定义泛型.默认就是id，就没法用点语法了。
  Person<iOS *> *p = [[Person alloc] init];
  p.language = ios;
+```
+
+### 泛型中用于父子类型的转换
+__convariant:协变
+__contravariant:逆变
