@@ -3,6 +3,7 @@
 runtime Xcode调试![](/assets/屏幕快照 2016-12-02 22.36.42.png)
 
 runtime发送消息和交换方法,功能需求的实现
+```
 #import "UIImage+Image.h"
 #import <objc/message.h>
 @implementation UIImage (Image)
@@ -14,9 +15,6 @@ runtime发送消息和交换方法,功能需求的实现
  // 交换方法实现:runtime
  method_exchangeImplementations(xmg_imageNamedMethod, imageNamedMethod);
 }
-
-
-
 // 会调用多次，swift写这个
 //+ (void)initialize
 //{ static dispatch_once_t onceToken;
@@ -34,3 +32,4 @@ runtime发送消息和交换方法,功能需求的实现
  return image;
 }
 @end
+```
