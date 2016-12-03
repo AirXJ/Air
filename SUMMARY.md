@@ -37,5 +37,4 @@
 * [MJExtension](mjextension.md)
 * [Object-C新特性](object-c新特性.md)
 * [runtime](run-time.md)
-    * [发送消息和交换方法](发送消息和交换方法.md)
 
