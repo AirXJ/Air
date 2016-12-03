@@ -13,7 +13,7 @@
 runtime Xcode调试,结局方法中不带有参数
 ![](/assets/屏幕快照 2016-12-02 22.36.42.png)
 
-runtime发送消息和交换方法
+runtime发送消息和交换方法，方法交换的本质是，交换方法列表映射到方法区的地址。
 ```
 #import "UIImage+Image.h"
 #import <objc/message.h>
