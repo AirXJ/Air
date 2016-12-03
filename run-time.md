@@ -1,8 +1,9 @@
 请到文件夹里找html，详细内容
 实例对象(的类) 是类对象(的类) 是元类对象(的类) 是根元类
+什么时候使用runtime，项目需要的时候，调用一些私有方法或者修改某些系统方法的功能需求。
 runtime Xcode调试![](/assets/屏幕快照 2016-12-02 22.36.42.png)
 
-runtime发送消息和交换方法,功能需求的实现
+runtime发送消息和交换方法
 ```
 #import "UIImage+Image.h"
 #import <objc/message.h>
