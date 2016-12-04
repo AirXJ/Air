@@ -37,7 +37,7 @@
     * [0.11.ATS](011ats.md)
 * [MJExtension](mjextension.md)
 * [runtime](run-time.md)
-    * [动态添加属性](动态添加属性.md)
     * [动态添加方法](动态添加方法.md)
+    * [动态添加属性](动态添加属性.md)
 * [Object-C新特性](object-c新特性.md)
 
