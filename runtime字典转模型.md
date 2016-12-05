@@ -16,11 +16,12 @@
  */
 
 // 获取类里面所有方法
-// class_copyMethodList(<#__unsafe_unretained Class cls#>, <#unsigned int *outCount#>)// 本质:创建谁的对象
+// class_copyMethodList(<#__unsafe_unretained Class cls#>, <#unsigned int *outCount#>)
 // 获取类里面属性
 //  class_copyPropertyList(<#__unsafe_unretained Class cls#>, <#unsigned int *outCount#>)
 // Ivar:成员变量 以下划线开头
 // Property:属性
+// 这个方法的本质:谁调用创建谁的对象
 + (instancetype)modelWithDict:(NSDictionary *)dict
 {
     id objc = [[self alloc] init]; 
