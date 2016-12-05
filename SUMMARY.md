@@ -37,6 +37,7 @@
     * [0.11.ATS](011ats.md)
 * [MJExtension](mjextension.md)
 * [runtime](run-time.md)
+    * [runtime消息机制](runtime消息机制.md)
     * [runtime交换方法](runtime交换方法.md)
     * [runtime动态添加方法](动态添加方法.md)
     * [runtime动态添加属性](动态添加属性.md)
