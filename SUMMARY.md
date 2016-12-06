@@ -45,4 +45,5 @@
         * [自动生成属性代码](自动生成属性代码.md)
         * [KVC内部实现原理](kvc内部实现原理.md)
 * [Object-C新特性](object-c新特性.md)
+* [xcode调试技巧](xcode调试技巧.md)
 
