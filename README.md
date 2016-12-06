@@ -4,3 +4,4 @@
  command m 最小化
  command 1 2 3切换  f11切换
  fn f3新建桌面 四个手指向上滑动新建桌民
+ command option esc 关闭
