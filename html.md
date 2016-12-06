@@ -8,5 +8,5 @@
 
 ```
 src是引入,是必需的,没有这个资源,标签就用不起来.(比如<img>,<audio>,<video>,...)
-&lt;hr&gt;相当于markdown的***,表示分割线
+<hr>相当于markdown的***,表示分割线
 ```
