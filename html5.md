@@ -1,0 +1,10 @@
+###html5常用标签
+######行内语义性标签
+```
+<meter value="30" max="100" min="0">浏览器兼容</meter>
+<progress value="40" max="100"></progress>
+
+ <!--音频-->
+<audio src="source/music.m4a" controls="controls"></audio>
+ <video src="source/BigBuck.m4v" controls="controls"></video>
+```
