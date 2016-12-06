@@ -1,7 +1,7 @@
 ###### h1h2h3h4h5h6相当于markdown语法的######, 修改文字大小的
 ![](/assets/屏幕快照 2016-12-06 20.28.35.png)
 
->&lt;hr&gt;相当于markdown的**,表示分割线
+>&lt;hr&gt;相当于markdown的3个*,表示分割线
 
 
 ***
