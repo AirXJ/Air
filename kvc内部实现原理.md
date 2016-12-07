@@ -3,6 +3,7 @@
 
 - KVC原理:遍历字典中所有key,去模型中查找有没有对应的属性，然后调用模型的set方法，如果没找到会通过setValue:forUndefinedKey:方法报错。
 - setValuesForKeysWithDictionary:方法内部是由setValue:value forKey:key和字典的enumerateKeysAndObjectsUsingBlock:方法组合实现的
+- 重写系统方法的情况，想给系统方法添加功能；或者不想让系统方法的实现，覆盖系统方法。[^课外知识]
 
 ```
 + (instancetype)itemWithDict:(NSDictionary *)dict
@@ -31,6 +32,7 @@
     return item;
 }
 
+//重写系统方法的情况，想给系统方法添加功能；或者不想让系统方法的实现，覆盖系统方法。
 // 系统找不到属性或者私有变量就会调用这个方法,报错
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
