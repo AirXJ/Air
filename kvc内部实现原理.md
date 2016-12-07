@@ -1,7 +1,7 @@
 // 模型只保存最重要的数据,导致模型的属性和字典不能一一对应
 > KVC根据字典会有问题，模型中不一定有属性，所以现在绕开字典，根据模型到字典中去对应的值就可以了。
  <hr>
- KVC原理:遍历字典中所有key,去模型中查找有没有对应的属性，然后调用模型的set
+ KVC原理:遍历字典中所有key,去模型中查找有没有对应的属性，然后调用模型的set方法，如果没找到会通过setValue:forUndefinedKey:方法报错。
 setValuesForKeysWithDictionary:方法内部是由setValue:value forKey:key和字典的enumerateKeysAndObjectsUsingBlock:方法组合实现的
 ```
 + (instancetype)itemWithDict:(NSDictionary *)dict
