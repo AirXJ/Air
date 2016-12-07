@@ -47,7 +47,7 @@
 * [Object-C新特性](object-c新特性.md)
 * [xcode调试技巧](xcode调试技巧.md)
 * [HTML](html.md)
+    * [CSS](css.md)
+        * [选择器的优先级别](选择器的优先级别.md)
     * [HTML5](html5.md)
-        * [CSS](css.md)
-            * [选择器的优先级别](选择器的优先级别.md)
 
