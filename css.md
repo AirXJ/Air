@@ -1,4 +1,4 @@
-CSS
+### CSS
 - 行内样式(内联样式）,直接在表现的style属性中书写
   &lt;p style="color: red; font-size: 60px; border:5px dashed purple"&gt;
 - 页内样式，在本网页的style标签中书写
@@ -44,13 +44,8 @@ CSS
         }
     </style>
 ```
-
-- CSS两个重点，属性(样式)和选择器(标签名)
- - 伪类
-```
-
-```
- - 标签选择器
+#### CSS两个重点，属性(样式)和选择器(标签名)
+- 标签选择器
 ```
 p(标签选择器){
 color(属性): blue;
@@ -58,23 +53,23 @@ font-size: 44px;
 background-color: yellowgreen;
 }
 ```
- - 类选择器
+- 类选择器
 ```
-/*类选择器*/
-        .test1{
+     .test1{
            color: green;
         }
 <p class="test1">我是段落标签我是段落标签</p>
 ```
- - id选择器
+- id选择器
+
 ```
-/*类选择器*/
         #first{
            color: green;
         }
 <p id="first">我是段落标签我是段落标签</p>
 ```
- - 并列选择器,选择器通过逗号组合，或
+- 并列选择器,选择器通过逗号组合，或
+
 ```
 .test1,#first{
            color: green;
