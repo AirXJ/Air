@@ -37,10 +37,12 @@ CSS
             border: 4px solid yellow;
         }
 
-        p{
-            color: blue;
+        p(选择器){
+            color(属性): blue;
             font-size: 44px;
             background-color: yellowgreen;
         }
     </style>
 ```
+
+- CSS两个重点，属性(样式)和选择器(标签名)
