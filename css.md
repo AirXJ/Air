@@ -16,3 +16,31 @@ CSS
         }
     </style>
 ```
+- 外部样式 ：写在单独的CSS文件中,通过link标签引用
+<head>
+<!--引用外部的样式-->
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+- 总结
+```
+<!--
+      css的规律:
+      1. 就近原则，有的会用最下面的。
+      2. 叠加原则,没有的可以拿来用。
+    -->
+    <link href="css/index.css" rel="stylesheet">
+    <style>
+        div{
+            color:red;
+            font-size: 30px;
+            border: 4px solid yellow;
+        }
+
+        p{
+            color: blue;
+            font-size: 44px;
+            background-color: yellowgreen;
+        }
+    </style>
+```
