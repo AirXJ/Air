@@ -25,7 +25,7 @@
 // 获取类里面属性
 //  class_copyPropertyList(<#__unsafe_unretained Class cls#>, <#unsigned int *outCount#>)
 
-// Ivar:成员变量 以下划线开头
+// Ivar:成员变量数组 ;应该是一种数据结构了，不单单是存放变量，里面还有成员变量的类型之类的其它东西，要获取名字应该有专门的方法，可能是get打头的方法通过ivar[]元素作为参数
 // Property:属性
 + (instancetype)modelWithDict:(NSDictionary *)dict
 {
