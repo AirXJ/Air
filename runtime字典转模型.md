@@ -1,5 +1,6 @@
 ####  模型只保存最重要的数据,导致模型的属性和字典不能一一对应
 - KVC根据字典会有问题，模型中不一定有属性，所以现在绕开字典，根据模型到字典中去对应的值就可以了。通过runtime拿到类对象的属性列表
+- Ivar:成员变量数组，在runtime头文件里 ;看了下头文件应该是一种数据结构(暂时没学会c++看不懂),不单单是存放变量，里面还有成员变量的类型之类的其它东西，要获取它的名字应该有专门的方法，可能是get打头的方法通过ivar[index]元素作为参数。
 
 ```
 #import "NSObject+Model.h"
@@ -25,7 +26,6 @@
 // 获取类里面属性
 //  class_copyPropertyList(<#__unsafe_unretained Class cls#>, <#unsigned int *outCount#>)
 
-// Ivar:成员变量数组，在runtime头文件里 ;应该是一种数据结构了，不单单是存放变量，里面还有成员变量的类型之类的其它东西，要获取名字应该有专门的方法，可能是get打头的方法通过ivar[]元素作为参数
 // Property:属性
 + (instancetype)modelWithDict:(NSDictionary *)dict
 {
