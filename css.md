@@ -70,9 +70,15 @@ background-color: yellowgreen;
         }
 <p id="first">我是段落标签我是段落标签</p>
 ```
- - 并列选择器
+ - 并列选择器,选择器通过逗号组合
 ```
 .test1,#first{
            color: green;
         }
+```
+ - 复合选择器
+```
+p.test1{
+     color: black;
+}
 ```
