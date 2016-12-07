@@ -1,5 +1,5 @@
 __有个html文件介绍runtime的，在应该图片目录里，下载下来后可以查看__
->经常要用到的头文件,写runtime要搞清楚一件事，以谁开头
+>经常要用到的头文件,写runtime要搞清楚一件事，以谁开头[^学习方法]
 - objc/NSObjCRuntime.h
 - objc/NSObject.h
 
