@@ -1,10 +1,14 @@
 // 模型只保存最重要的数据,导致模型的属性和字典不能一一对应
-
+> KVC根据字典会有问题，模型中不一定有属性，所以现在绕开字典，根据模型到字典中去对应的值就可以了。
+ <hr>
+ KVC原理:遍历字典中所有key,去模型中查找有没有对应的属性，然后调用模型的set
+setValuesForKeysWithDictionary:方法内部是由setValue:value forKey:key和字典的enumerateKeysAndObjectsUsingBlock:方法组合实现的
+```
 + (instancetype)itemWithDict:(NSDictionary *)dict
 {
     StatusItem *item = [[self alloc] init];
     
-    // KVC:把字典中所有值给模型的属性赋值
+    // KVC:把字典中所有值给模型的属性赋值，这个方法内部实现就是下面的遍历通过循环一个个查找然后给模型赋值。
     [item setValuesForKeysWithDictionary:dict];
     // 拿到每一个模型属性,去字典中取出对应的值,给模型赋值
     // 从字典中取值,不一定要全部取出来
@@ -26,8 +30,7 @@
     return item;
 }
 
-// 重写系统方法? 1.想给系统方法添加额外功能 2.不想要系统方法实现
-// 系统找不到就会调用这个方法,报错
+// 系统找不到属性或者私有变量就会调用这个方法,报错
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
     
@@ -39,3 +42,4 @@
     3.去模型中查找有没有_source属性,有,直接访问属性赋值 _source = value
     4.找不到,就会直接报错 setValue:forUndefinedKey:报找不到的错误
  */
+```
