@@ -22,7 +22,7 @@ CSS
 <link rel="stylesheet" href="css/index.css">
 </head>
 
-- 总结
+- 总结css的规律:
 ```
 <!--
       css的规律:
