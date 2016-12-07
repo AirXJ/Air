@@ -46,12 +46,33 @@ CSS
 ```
 
 - CSS两个重点，属性(样式)和选择器(标签名)
-
-类选择器
+ - 标签选择器
+```
+p(标签选择器){
+color(属性): blue;
+font-size: 44px;
+background-color: yellowgreen;
+}
+```
+ - 类选择器
 ```
 /*类选择器*/
         .test1{
            color: green;
         }
 <p class="test1">我是段落标签我是段落标签</p>
+```
+ - id选择器
+```
+/*类选择器*/
+        #first{
+           color: green;
+        }
+<p id="first">我是段落标签我是段落标签</p>
+```
+ - 并列选择器
+```
+.test1,#first{
+           color: green;
+        }
 ```
