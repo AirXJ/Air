@@ -9,6 +9,7 @@
         * [UIEvent](uievent.md)
         * [UITouch](uitouch.md)
         * [transform](transform.md)
+        * [手势](手势.md)
     * [UIViewController](uiviewcontroller.md)
     * [UIImageView](uiimageview.md)
     * [UILabel](uilabel.md)
