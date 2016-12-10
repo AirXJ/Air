@@ -1,0 +1,1 @@
+getter、setter方法统称访问器(accessor)方法
