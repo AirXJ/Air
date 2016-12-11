@@ -14,6 +14,7 @@
     * [UIImageView](uiimageview.md)
     * [UILabel](uilabel.md)
     * [UIButton](uibutton.md)
+        * [解决与手势的冲突](解决与手势的冲突.md)
     * [UITableView](uitableview.md)
         * [cell](cell.md)
             * [等高的](等高的.md)
