@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [自己犯过的错误](自己犯过的错误.md)
 * [单词积累](单词积累.md)
 * [基础UI](chapter1.md)
     * [UIView+StoryBoard](第一天.md)
