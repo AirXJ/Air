@@ -1,1 +1,2 @@
 6以后CoreGraphics UIKit Foundation框架都是自动导入了
+在iOS开发中，app的可见范围是由启动界面决定的，如果没有设置启动界面，界面显示会看的不舒服。
