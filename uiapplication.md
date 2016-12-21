@@ -8,20 +8,9 @@
 - 提供一个方法给外界获取单例
 
 ```
-#import <Foundation/Foundation.h>
-
-@interface Person : NSObject
-
-
-// 获取单例
-+ (instancetype)sharePerson;
-
-@end
-#import "Person.h"
 
 @implementation Person
 // 程序启动时候创建对象
-
 // 静态变量
 static Person *_instance = nil;
 
@@ -61,8 +50,6 @@ static Person *_instance = nil;
         [excp raise];
         
     }
-    
-    
     // super -> NSObject 才知道怎么分配内存
     // 调用系统默认的做法, 当重写一个方法的时候,如果不想要覆盖原来的实现,就调用super
     return [super alloc];
