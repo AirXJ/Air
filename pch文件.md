@@ -8,10 +8,24 @@ pch原理:pch里面的内容被项目中的所有文件共有.
  <hr>
    -  ...标示在宏里面的可变参数
    -  __VA_ARGS__ 标示函数里面的可变参数
+ - 2.存放一些公用的头文件，分类或者第三方框架头文件  
+ 
 ```
-#define XMGLog(...) NSLog(__VA_ARGS__)
+// __OBJC__每个OC文件都会自动定义这个宏
+#ifdef __OBJC__
+
+#define ABC 10
+#import "UIImage+Image.h"
+
+// 3.自定义Log(输出日志)
+#ifdef DEBUG // 调试
+#define XMGLog(...)  NSLog(__VA_ARGS__)
+#else // 发布
+#define XMGLog(...)
+#endif
+#endif
 ```
- - 2.存放一些公用的头文件，分类或者第三方框架头文件
+
 
  
  如何设置[^这里Precompile Prefix Header是YES，路径名是工程路径，不是整个工程文件夹GameLive/GameLive/...，第二层就可以]
