@@ -1,2 +1,2 @@
-6以后CoreGraphics UIKit Foundation框架都是自动导入了
-在iOS开发中，app的可见范围是由启动界面决定的，如果没有设置启动界面，就有黑色不显示区域。xcode8也是这样。
+- 6以后CoreGraphics UIKit Foundation框架都是自动导入了
+- 在iOS开发中，app的可见范围是由启动界面决定的，如果没有设置启动界面，就有黑色不显示区域。xcode8也是这样。
