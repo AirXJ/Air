@@ -6,7 +6,9 @@
  休眠 command option 关机键或者cotrol shift 关机键；
  command 1 2 3切换  f11切换
  fn f3新建桌面 四个手指向上滑动新建桌民
- command option esc 关闭
+ command option esc 任务管理器
+ command option ［或者］在xcode中移动代码上下，只要光标放在代码前
+ 
 ```
 ***
 **一些转义字符和markdown的表格语法、角标语法:[^冒号表示对齐方式]**
