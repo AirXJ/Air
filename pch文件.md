@@ -20,7 +20,8 @@
 #define ABC 10
 #import "UIImage+Image.h"
 
-#ifdef DEBUG // 调试的时候会打印，发布的时候不会
+#ifdef DEBUG // 调试的时候会打印，发布的时候不会 #define DEBUG 10
+
 // ...表示在宏里面的可变参数
 // __VA_ARGS__ 表示函数里面的可变参数
 #define XMGLog(...)  NSLog(__VA_ARGS__)
