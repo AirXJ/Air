@@ -18,8 +18,7 @@ static Person *_instance = nil;
 + (void)load
 {
     NSLog(@"%s",__func__);
-   
- 
+
 }
 
 + (instancetype)sharePerson
