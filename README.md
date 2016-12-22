@@ -1,6 +1,10 @@
 # My Awesome Book
 
 ###### 笔记只是自己的一段经历，感谢git。笔记里查不到，请stackoverflow，必须全英文查找，专业的IT问答网站
+- 按delete去掉冒号，再按esc就能弹出提示
+
+![](/assets/屏幕快照 2016-12-22 09.28.01.png)
+![](/assets/屏幕快照 2016-12-22 09.28.08.png)
 ```
  command m 最小化
  休眠 command option 关机键或者cotrol shift 关机键；
@@ -8,6 +12,7 @@
  fn f3新建桌面 四个手指向上滑动新建桌民
  command option esc 任务管理器
  command option ［或者］在xcode中移动代码上下，只要光标放在代码前
+
  
 ```
 ***
