@@ -19,14 +19,15 @@ static Person *_instance = nil;
 {
     NSLog(@"%s",__func__);
    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _instance = [[self alloc] init];
-    });
+ 
 }
 
 + (instancetype)sharePerson
 {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+    _instance = [[self alloc] init];
+      });
     return _instance;
 }
 
