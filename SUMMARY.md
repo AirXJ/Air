@@ -66,4 +66,5 @@
     * [UIApplication](uiapplication.md)
         * [可以干什么](管理状态栏.md)
         * [UIApplicationDelegate](uiapplicationdelegate.md)
+        * [UIApplicationMain](uiapplicationmain.md)
 
