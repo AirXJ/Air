@@ -65,4 +65,5 @@
     * [xcode5 和6的区别](xcode5-和6的区别.md)
     * [UIApplication](uiapplication.md)
         * [可以干什么](管理状态栏.md)
+        * [UIApplicationDelegate](uiapplicationdelegate.md)
 
