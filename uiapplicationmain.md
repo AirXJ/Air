@@ -7,7 +7,7 @@ main -> UIApplicationMain,在这之前，加载类的信息。
 
 1.创建UIApplication对象
 
-2.创建UIApplication的代理对象,而且给UIApplication对象代理属性赋值
+2.创建UIApplication的代理对象,而且给UIApplication对象的代理属性赋值
 
 3.开启主运行循环,作用接收事件,让程序一直运行
 
