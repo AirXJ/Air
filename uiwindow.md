@@ -41,3 +41,16 @@
 }
 
 ```
+
+四.`窗口补充`
+
+1.应用程序中那些控件属于窗口,1.状态栏 2.键盘
+
+2.窗口层级关系
+UIWindowLevelAlert > UIWindowLevelStatusBar > UIWindowLevelNormal
+
+`设置窗口的层级,层级谁大就显示在最外面`
+
+3.UITextField显示键盘
+
+注意点:`如果一个键盘想要弹出来,必须把textField添加到一个控件上.`
