@@ -30,7 +30,7 @@
     // 2.创建根控制器,在设置窗口的根控制器
     UIViewController *vc = [[UIViewController alloc] init];
 
-    // 设置窗口的根控制器,底层会自动把根控制器的view添加到窗口上,并且让控制器的view有旋转功能。相当于addsubview
+    // 设置窗口的根控制器,底层会自动把根控制器的view添加到窗口上,并且让控制器的view有旋转功能(uiwindow没有旋转是因为没有loadview方法)。相当于addsubview,
     self.window.rootViewController = vc;
 
     // 3.显示窗口,下面2步是它的底层实现，当不想设置主窗口但又要显示window可以用方法1
@@ -43,6 +43,12 @@
 
 ```
 
+- `小提示`
+
+ 为什么创建控制器，而不是视图直接添加到UIWindow上
+ 
+ 因为UIViewController有loadview方法，会让view重新布局，而且一个萝卜一个坑，好管理。
+ 
 四.`窗口补充`
 
 1.应用程序中那些控件属于窗口,1.状态栏 2.键盘
