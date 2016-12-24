@@ -1,4 +1,4 @@
-模拟控制器的view
+模拟系统加载storyboard
 ``` 
  // 1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -6,7 +6,7 @@
     // UIStoryboard专门用来加载stroyboard
     // name:storyboard名称不需要后缀
     UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    // 加载sotryboard描述的控制器
+    // 加载storyboard描述的控制器
     // 默认是加载箭头指向的控制器
     UIViewController *vc = [stroyboard instantiateInitialViewController];
 //    UIViewController *vc = [stroyboard instantiateViewControllerWithIdentifier:@"blue"];
@@ -15,8 +15,6 @@
     self.window.rootViewController = vc;
     // 3.显示窗口
     [self.window makeKeyAndVisible];
-    
-    
     return YES;
 ```
 -  `-  (void)loadView`
