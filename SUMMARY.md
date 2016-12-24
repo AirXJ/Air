@@ -12,7 +12,6 @@
         * [可以干什么](管理状态栏.md)
         * [UIApplicationDelegate](uiapplicationdelegate.md)
         * [UIApplicationMain](uiapplicationmain.md)
-        * [UIStoryboard](uistoryboard.md)
 * [基础UI](chapter1.md)
     * [UIView+StoryBoard](第一天.md)
         * [UIRespond](uirespond.md)

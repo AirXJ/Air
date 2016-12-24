@@ -15,6 +15,11 @@
     
     // 设置窗口的根控制器
     self.window.rootViewController = vc;
+    // 3.显示窗口
+    [self.window makeKeyAndVisible];
+    
+    
+    return YES;
 ```
 
 
