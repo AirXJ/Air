@@ -4,6 +4,19 @@
  为什么创建控制器，而不是视图直接添加到UIWindow上
  
  因为UIViewController有loadview方法，会让view重新布局，而且一个萝卜一个坑，好管理。
+ 
+- 苹果是怎么创建UIViewController的
+ ```
+ // 2.加载main.storyboard,创建main.storyboard描述的控制器
+// UIStoryboard专门用来加载stroyboard
+// name:storyboard名称不需要后缀
+UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+// 加载storyboard描述的控制器
+// 默认是加载箭头指向的控制器
+UIViewController *vc = [stroyboard instantiateInitialViewController];
+// UIViewController *vc = [stroyboard instantiateViewControllerWithIdentifier:@"blue"];
+ ```
+
 
 ```
 - (void)loadView{
