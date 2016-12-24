@@ -21,7 +21,7 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 
 ```
 - (void)loadView{
-
+懒加载
  [super loadView];
 
  NSLog(@"%s", __func__);
