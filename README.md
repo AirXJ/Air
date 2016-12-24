@@ -5,6 +5,7 @@
 
 ![](/assets/屏幕快照 2016-12-22 09.28.01.png)
 ![](/assets/屏幕快照 2016-12-22 09.28.08.png)
+
 ```
  command m 最小化
  休眠 command option 关机键或者cotrol shift 关机键；
