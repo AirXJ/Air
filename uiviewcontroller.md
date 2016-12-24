@@ -1,5 +1,11 @@
 # UIViewController调用的方法的顺序
-```obj/*
+- `小提示`
+
+ 为什么创建控制器，而不是视图直接添加到UIWindow上
+ 
+ 因为UIViewController有loadview方法，会让view重新布局，而且一个萝卜一个坑，好管理。
+
+```
 - (void)loadView{
 
  [super loadView];
@@ -7,11 +13,10 @@
  NSLog(@"%s", __func__);
 
 }
-*/
 ```
 
 
-
+```
 /**
 
  1. 系统调用
@@ -29,6 +34,7 @@
  //TODO:待会补上
 
 }
+```
 
 
 － **`只有在这个方法中能删除self.view，它的父控件是UIWindow`**
@@ -53,7 +59,7 @@
 */
 
 
-```obj
+```
 -(void)didReceiveMemoryWarning {
 
   [super didReceiveMemoryWarning\];
