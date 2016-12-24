@@ -38,7 +38,6 @@
      2.成为应用程序的主窗口  application.keyWindow = self.window;
     // makeKeyAndVisible:让窗口成为应用程序的主窗口,并且显示窗口
     [self.window makeKeyAndVisible];
-
     return YES;
 }
 
