@@ -14,6 +14,7 @@
         * [UIApplicationMain](uiapplicationmain.md)
         * [UIStoryBoard](uistoryboard.md)
         * [xib](xib.md)
+        * [info.plist文件](infoplist文件.md)
 * [基础UI](chapter1.md)
     * [UIView+StoryBoard](第一天.md)
         * [UIRespond](uirespond.md)

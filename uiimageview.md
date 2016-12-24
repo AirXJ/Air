@@ -8,7 +8,7 @@
  imageView.frame = self.view.bounds;
  // 3. 设置背景颜色
  imageView.backgroundColor = [UIColor redColor];
- // 4. 设置背景图片
+ // 4. 设置背景图片,只会去主bundle里找
  imageView.image = [UIImage imageNamed:@"1"];
  // 5.设置图片的内容模式
  imageView.contentMode = UIViewContentModeScaleAspectFill;
