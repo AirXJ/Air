@@ -1,13 +1,11 @@
+模拟控制器的view
 ``` 
  // 1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    
     // 2.加载main.storyboard,创建main.storyboard描述的控制器
     // UIStoryboard专门用来加载stroyboard
     // name:storyboard名称不需要后缀
     UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
     // 加载sotryboard描述的控制器
     // 默认是加载箭头指向的控制器
     UIViewController *vc = [stroyboard instantiateInitialViewController];
@@ -21,8 +19,14 @@
     
     return YES;
 ```
+-  `-  (void)loadView`
+
+> loadView作用:加载控制器的view
+ loadView什么调用:当控制器的view第一次使用的时候就会调用
+ 开发中什么情况使用:只要想自定义控制器的view就调用这个方法
 
 
-//从xib或storyboard加载控件，只调用一次
 
-- (void)awakeFromNib
+- `- (void)awakeFromNib`
+从xib或storyboard加载控件，只调用一次
+
