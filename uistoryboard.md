@@ -1,4 +1,4 @@
-模拟系统加载storyboard
+模拟系统加载Main
 ``` 
  // 1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -17,14 +17,17 @@
     [self.window makeKeyAndVisible];
     return YES;
 ```
+
 -  `-  (void)loadView`
 
-> loadView作用:加载控制器的view
+>loadView作用:加载控制器的view
  loadView什么调用:当控制器的view第一次使用的时候就会调用
- 开发中什么情况使用:只要想自定义控制器的view就调用这个方法
+  
+>开发中什么情况使用:只要想自定义控制器的view就调用这个方法或者采用storyboard关联view。
 
 
 
 - `- (void)awakeFromNib`
-从xib或storyboard加载控件，只调用一次
+
+>从xib或storyboard加载控件，只调用一次
 
