@@ -33,7 +33,7 @@
     // 设置窗口的根控制器,底层会自动把根控制器的view添加到窗口上,并且让控制器的view有旋转功能
     self.window.rootViewController = vc;
 
-    // 3.显示窗口,下面2步是它的底层实现，当不想设置主窗口但又要
+    // 3.显示窗口,下面2步是它的底层实现，当不想设置主窗口但又要显示window可以用方法1
      1.显示窗口 self.window.hidden = NO;
      2.成为应用程序的主窗口  application.keyWindow = self.window;
     // makeKeyAndVisible:让窗口成为应用程序的主窗口,并且显示窗口
