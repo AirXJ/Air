@@ -47,7 +47,7 @@
 
 1.应用程序中那些控件属于窗口,1.状态栏 2.键盘
 
-2.窗口层级关系
+2.窗口层级关系，可以做加减，同级看调用先后。
 UIWindowLevelAlert > UIWindowLevelStatusBar > UIWindowLevelNormal
 
 `设置窗口的层级,层级谁大就显示在最外面`
