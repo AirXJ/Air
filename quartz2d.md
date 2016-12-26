@@ -65,7 +65,6 @@ Printer Graphics Context
     CGContextSetLineJoin(ctx, kCGLineJoinRound);
     //设置线的顶角样式
     CGContextSetLineCap(ctx, kCGLineCapRound);
-    
     //设置颜色
     [[UIColor redColor] set];
     
