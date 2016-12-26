@@ -10,6 +10,11 @@
  
  NSString *const NSForegroundColorAttributeName;(字体颜色)
  
+ (不设置宽度，会跟view背景色，以及前台字体颜色杂交)
+ NSString *const NSStrokeColorAttributeName;(边线颜色)
+ 
+ NSString *const NSStrokeWidthAttributeName;(边线宽度)
+ 
  NSString *const NSBackgroundColorAttributeName;(字体背景色)
  
  NSString *const NSLigatureAttributeName;(连字符)
@@ -19,10 +24,6 @@
  NSString *const NSStrikethroughStyleAttributeName;(删除线)
  
  NSString *const NSUnderlineStyleAttributeName;(下划线)
- 
- NSString *const NSStrokeColorAttributeName;(边线颜色)
- 
- NSString *const NSStrokeWidthAttributeName;(边线宽度)
  
  NSString *const NSShadowAttributeName;(阴影)(横竖排版)
  
