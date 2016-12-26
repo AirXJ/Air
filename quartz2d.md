@@ -18,11 +18,15 @@
    Bitmap Graphics Context(位图上下 )
    PDF Graphics Context
    Window Graphics Context
-   Layer Graphics Context(`图层上下文`, 定义UIView取得上下文就是图层上下文. UIView之所以能够显 就是因为他内部有一个图层)
+   Layer Graphics Context(`图层上下文`, 定义UIView取得上下文就是图层上下文. UIView之所以能够显示就是因为他内部有一个图层)
    Printer Graphics Context
+   
 6.如何自定义UIView,步骤是什么?
    先得要有上下文,有了上文才能决定把绘制的东西显示到哪个地方去.其次就是这个上下文必须得和View相关联.才能将内容绘制到View上面.
-   步骤: 1.要先 定定UIView
-        2.实现DrawRect方法
-         3.在DrawRect方法中取得跟View相关联的上下文 . 
-         4.绘制路径(描述路径长什么样). 5.把描述好的路径保存到上下 (即:添加路径到上下 ) 6.把上下文的内容渲染到View
+   步骤:    
+          1.要先 定定UIView
+          2.实现DrawRect方法
+          3.在DrawRect方法中取得跟View相关联的上下文. 
+          4.绘制路径(描述路径长什么样).
+          5.把描述好的路径保存到上下文(即:添加路径到上下文)
+          6.把上下文的内容渲染到View
