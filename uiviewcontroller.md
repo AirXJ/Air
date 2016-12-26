@@ -50,10 +50,6 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 ```
 
 
-－ **`在这个方法中能删除self.view，因为它的父控件是UIWindow`**,新版本xcode删不掉了.因为:
-
->如果包含在一个viewController中的view被直接添加到一个view上，就像这样：
-[view1 addSubView: viewController.view];，这样我们的viewController就不会收到viewDidAppear:的消息。按这种方式添加视图的话，我们一般需要手动发送这个消息，也就是调用viewController的viewDidAppear方法。否则的话相关的动画都无法正常显示。
 ```
 - (void)viewDidAppear:(BOOL)animated{
  [super viewDidAppear:animated];
