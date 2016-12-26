@@ -3,7 +3,7 @@
 
 - 内部创建一次单例,什么时候创建,程序一启动的时候创建单例,使用静态全局变量保存单例对象
   -  +(void)load方法比main函数先调用[^要手动释放内存]，打印就能判断先后[^load方法，每次程序一启动,就会把所有的类加载进内存，类方法，静态变量等等所有类的内容],但是UIApplication对象是在main函数里创建的，不是在load方法里创建的。[^+ (void)initialize{
-    if (self == [XMGArenaNavViewController class]),初始化对象的时候调用，继承3层调用3次]
+    if (self == [XMGArenaNavViewController class]),初始化对象的时候调用，继承3层调用3次，避免错误，判断类型]
 - 禁止别人第二次调用alloc方法，一调用就崩掉，断言或者异常
 - 提供一个方法给外界获取单例
 
