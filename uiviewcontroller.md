@@ -1,4 +1,4 @@
-# UIViewController调用的方法的顺序
+# UIViewController调用的方法的生命周期
 - `小提示`
 
  为什么创建控制器，而不是视图直接添加到UIWindow上
@@ -42,21 +42,9 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
  */
 
 - (void)viewDidLoad {
-
- [super viewDidLoad];
-
-
-}
-```
-
-
-```
+- (void)viewWillAppear:(BOOL)animated
+- (void)drawRect:(CGRect)rect 
 - (void)viewDidAppear:(BOOL)animated{
- [super viewDidAppear:animated];
-
- NSLog(@"viewDidAppear-----%@", self.view.superview);
-
-}
 ```
 
 
@@ -73,7 +61,6 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
   [super didReceiveMemoryWarning\];
 
 
-self.dataArr = nil;
 
 }
 ```
