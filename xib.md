@@ -22,14 +22,15 @@ ViewController *vc = [[ViewController alloc] initWithNibName:@"VC" bundle:nil];
 ```
 
 
-- xib还能设置view的类，封装管理
+### xib还能设置view的类，封装管理
 ```
 //这个方法是创建view的, 而且不是懒加载的,而且一般不要绑定控制器，而且要addsubview
 UIView *vc1 = [[NSBundle mainBundle]loadNibNamed:@"View1" owner:self options:nil].lastObject;
     vc.view = vc1;
 ```
-
-xib还能设置view的类，封装管理
-- 如果View从xib中加载,就会调用initWithCoder:方法[^不会进入initWithFrame方法]
+- `initWithCoder:`如果View从xib中加载,就会调用此方法[^不会进入initWithFrame方法]
 *  创建子控件,...
    注意: 如果子控件是从xib中创建,是处于未唤醒状态
+- `- (void)awakeFromNib`，从xib中唤醒,添加 xib中创建的子控件 的子控件用此方法，也可以添加xib的子控件
+    
+
