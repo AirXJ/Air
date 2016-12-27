@@ -46,6 +46,8 @@
 	 	drawInRect:使用这个方法绘制出来的图片尺寸会和传入的rect区域一样大.
 	 
 	 6.如果进行平铺图片?
+	        UIImage *image = [UIImage imageNamed:@"001"];
+
 	 	[image drawAsPatternInRect:rect];
 	 
 	 7.如何选用UIKit提供的方法快速画一个矩形?
