@@ -1,4 +1,4 @@
-05-UIKit绘图演练[^下面的画图画字画矩形的方法都是封装过的，其实都是用上下文绘制的]
+05-UIKit绘图演练[^一定要在上下文中去书写]
 	
 	一般使用UIKit给我们提供的绘图来绘制一些文字,图片这些东西.
 	UIKit给我们提供画图的方法底层也是分为四步.所以也必须在drawRect方法当中去写.
@@ -50,9 +50,9 @@
 
 	 	[image drawAsPatternInRect:rect];
 	 
-	 7.如何选用UIKit提供的方法快速画一个矩形?
+### 7.如何选用UIKit提供的方法快速画一个矩形?
 	    快速的用矩形去填充一个区域
-	 	UIRectFill(rect);
+	 	`UIRectFill(rect);`
 	 	
 	 8.如何利用UIKit裁剪一个区域?
 	   UIRectClip(CGRectMake(0, 0, 50, 50));
