@@ -16,6 +16,7 @@
         * [UIStoryBoard](uistoryboard.md)
         * [xib](xib.md)
         * [info.plist文件](infoplist文件.md)
+        * [代码创建控件](代码创建控件.md)
     * [UIWindow](uiwindow.md)
     * [UIView+StoryBoard](第一天.md)
         * [UIRespond](uirespond.md)
