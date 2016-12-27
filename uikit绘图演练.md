@@ -54,7 +54,7 @@
 	    快速的用矩形去填充一个区域
 	 	`UIRectFill(rect);`
 	 	
-	 8.如何利用UIKit裁剪一个区域?
-	［path addClip];
+###  8.如何利用UIKit裁剪一个区域?
+	   ［path addClip];
 	   UIRectClip(CGRectMake(0, 0, 50, 50));
 	   这个方法必须要设置好裁剪区域,才能有裁剪
