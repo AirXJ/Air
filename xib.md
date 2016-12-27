@@ -30,3 +30,4 @@ UIView *vc1 = [[NSBundle mainBundle]loadNibNamed:@"View1" owner:self options:nil
 ```
 
 xib还能设置view的类，封装管理
+- 不会进入initWithFrame方法
