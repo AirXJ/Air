@@ -21,3 +21,5 @@ ViewController *vc = [[ViewController alloc] initWithNibName:@"VC" bundle:nil];
 UIView *vc1 = [[NSBundle mainBundle]loadNibNamed:@"View1" owner:self options:nil].lastObject;
     vc.view = vc1;
 ```
+
+xib还能设置view的类，封装管理
