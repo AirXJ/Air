@@ -21,7 +21,7 @@
 
 图形上下文的类型有:
 
-Bitmap Graphics Context(位图上下文)
+Bitmap Graphics Context(位图上下文,图片)
 
 PDF Graphics Context
 
