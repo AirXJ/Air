@@ -23,6 +23,8 @@ ViewController *vc = [[ViewController alloc] initWithNibName:@"VC" bundle:nil];
 
 
 ### xib还能设置view的类，封装管理
+- 如果一个view从xib中加载,就不能用[xxx alloc] init] 和 [xxx alloc] initWithFrame:]创建
+- 如果一个xib经常被使用,应该提供快速构造类方法,将下面的方法封装到view类里
 ```
 //这个方法是创建view的, 而且不是懒加载的,而且一般不要绑定控制器，而且要addsubview
 UIView *vc1 = [[NSBundle mainBundle]loadNibNamed:@"View1" owner:self options:nil].lastObject;
