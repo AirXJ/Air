@@ -16,6 +16,7 @@ NIB其实是一个文件夹，里面有可执行的二进制文件
 ```
 //nib是xib或storyboard经过编译后的的文件名，不是放在mainbundle的xib不会编译，一般都是放图片到bundle里，懒加载，一定要绑定控制器
 ViewController *vc = [[ViewController alloc] initWithNibName:@"VC" bundle:nil];
+
 //这个方法是创建view的, 而且不是懒加载的,而且不一定要绑定控制器
 UIView *vc1 = [[NSBundle mainBundle]loadNibNamed:@"View1" owner:self options:nil].lastObject;
     vc.view = vc1;
