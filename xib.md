@@ -30,4 +30,6 @@ UIView *vc1 = [[NSBundle mainBundle]loadNibNamed:@"View1" owner:self options:nil
 ```
 
 xib还能设置view的类，封装管理
-- 不会进入initWithFrame方法
+- 如果View从xib中加载,就会调用initWithCoder:方法[^- 不会进入initWithFrame方法]
+*  创建子控件,...
+   注意: 如果子控件是从xib中创建,是处于未唤醒状态
