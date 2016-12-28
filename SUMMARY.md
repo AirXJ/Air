@@ -52,6 +52,7 @@
             * [图片上下文的矩阵操作](图片上下文的矩阵操作.md)
         * [Bitmap Graphics Context\(位图上下文\)](bitmap-graphics-context位图上下文.md)
             * [带有边框的圆形图片裁剪](带有边框的圆形图片裁剪.md)
+            * [截屏](截屏.md)
         * [UIKit绘图演练](uikit绘图演练.md)
 * [Swift](swift入门.md)
     * [0.1.常量&变量](常量变量.md)
