@@ -14,7 +14,7 @@ command k 清空xcode缓存
  fn f3新建桌面 四个手指向上滑动新建桌民
  command option esc 任务管理器
  command option ［或者］在xcode中移动代码上下，只要光标放在代码前
-
+ command option = 故事板自动对齐约束
  
 ```
 ***
