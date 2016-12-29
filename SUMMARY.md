@@ -7,8 +7,8 @@
     * [继承](继承.md)
     * [pch文件](pch文件.md)
     * [\#if、\#ifdef、\#if define区别](if、ifdef、if-define区别.md)
+    * [自动提示宏](自动提示宏.md)
     * [xcode5 和6的区别](xcode5-和6的区别.md)
-    * 自动提示宏
 * [基础UI](chapter1.md)
     * [UIApplication](uiapplication.md)
         * [可以干什么](管理状态栏.md)
