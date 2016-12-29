@@ -1,6 +1,7 @@
 模拟系统加载Main
-``` 
- // 1.创建窗口
+
+```
+// 1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // 2.加载main.storyboard,创建main.storyboard描述的控制器
     // UIStoryboard专门用来加载stroyboard
@@ -10,7 +11,7 @@
     // 默认是加载箭头指向的控制器
     UIViewController *vc = [stroyboard instantiateInitialViewController];
 //    UIViewController *vc = [stroyboard instantiateViewControllerWithIdentifier:@"blue"];
-    
+
     // 设置窗口的根控制器
     self.window.rootViewController = vc;
     // 3.显示窗口
@@ -18,16 +19,16 @@
     return YES;
 ```
 
--  `-  (void)loadView`
+* `-  (void)loadView`
+> 控制器才用init创建，只要进入了这个方法就不会根据其它了。
+> loadView作用:加载控制器的view  
+>  loadView什么调用:当控制器的view第一次使用的时候就会调用
+>
+> 开发中什么情况使用:只要想自定义控制器的view就调用这个方法或者采用storyboard关联view。
 
->loadView作用:加载控制器的view
- loadView什么调用:当控制器的view第一次使用的时候就会调用
-  
->开发中什么情况使用:只要想自定义控制器的view就调用这个方法或者采用storyboard关联view。
+* `- (void)awakeFromNib`
+
+> 从xib或storyboard加载控件，只调用一次
 
 
-
-- `- (void)awakeFromNib`
-
->从xib或storyboard加载控件，只调用一次
 
