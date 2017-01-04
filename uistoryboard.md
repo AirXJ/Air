@@ -24,7 +24,7 @@
 > loadView作用:加载控制器的view  
 >  loadView什么调用:当控制器的view第一次使用的时候就会调用
 >
-> 开发中什么情况使用:只要想自定义控制器的view就调用这个方法或者采用storyboard关联view。
+> 开发中什么情况使用:只要想自定义控制器的view就调用这个方法或者采用storyboard关联view。里面控件唤醒
 
 * `- (void)awakeFromNib`
 
