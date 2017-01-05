@@ -43,7 +43,7 @@
 	 	
 	 5.在绘制图片过程当中.drawAtPoint:和drawInRect:两个方法的区别?
 	 	drawAtPoint:绘制出来的图图片跟图片的实际尺寸一样大
-	 	drawInRect:使用这个方法绘制出来的图片尺寸会和传入的rect区域一样大.
+	 	drawInRect:使用这个方法绘制出来的图片尺寸会和传入的rect区域(自定义view的rect)一样大.
 	 
 	 6.如果进行平铺图片?
 	        UIImage *image = [UIImage imageNamed:@"001"];
