@@ -56,6 +56,7 @@
             * [截屏](截屏.md)
             * [擦除](擦除.md)
         * [UIKit绘图演练](uikit绘图演练.md)
+        * [CALayer](calayer.md)
     * [父子控制器](父子控制器.md)
 * [UI补充](ui补充.md)
     * [Stack View](stack-view.md)
