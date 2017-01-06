@@ -5,7 +5,7 @@ layer的CATransform3D属性.只有旋转的时候才可以看出3D的效果.
 有4组数据，有3个轴。
 
 旋转  
-x,y,z分别代表x,y,z轴.CATransform3DMakeRotation\(M\_PI, 1, 0, 0\)\[^绕x轴旋转\];
+x,y,z分别代表x,y,z轴.CATransform3DMakeRotation(M_PI, 1, 0, 0)[^绕x轴旋转];
 
 平移  
 CATransform3DMakeTranslation\(x,y,z\)  
