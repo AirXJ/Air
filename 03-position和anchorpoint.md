@@ -13,11 +13,11 @@ position和anchorPoint是CAlayer的两个属性.
 
 position:它是用来设置当前的layer在父控件当中的位置的.
 
-所以它的坐标原点.以父控件的左上角为\(0.0\)点.
+所以它的坐标原点.以父控件的左上角为(0,0)点.
 
 anchorPoint:它是决点CALayer身上哪一个点会在position属性所指的位置
 
-anchorPoint它是以当前的layer左上角为原点\(0.0\)
+anchorPoint它是以当前的layer左上角为原点(0,0)
 
 它的取值范围是0~1,它的默认在中间也就是(0.5,0.5)的位置.
 
