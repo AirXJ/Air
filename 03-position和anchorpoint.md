@@ -1,5 +1,5 @@
 ***
-######  03-position和anchorPoint(默认值0～1)[^两者至始至终重合,锚点默认是(0.5,0.5)]
+######  03-position和anchorPoint(默认值0～1)[^两者至始至终重合,锚点默认是(0.5,0.5),UIView的center,就是它内部layer的position.]
 
 ![](/assets/屏幕快照 2017-01-06 15.01.09.png)
 
