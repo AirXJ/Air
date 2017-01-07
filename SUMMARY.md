@@ -68,6 +68,7 @@
             * [05-时钟旋转](时钟旋转.md)
         * [02-CAAnimation](02caanimation.md)
             * [CABasicAnimation](cabasicanimation.md)
+            * [CATransition](catransition.md)
 * [UI补充](ui补充.md)
     * [Stack View](stack-view.md)
 * [Swift](swift入门.md)
