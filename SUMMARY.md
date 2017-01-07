@@ -66,6 +66,8 @@
             * [03-position和anchorPoint](03-position和anchorpoint.md)
             * [04-隐式动画自定义层才有](04-隐式动画.md)
             * [05-时钟旋转](时钟旋转.md)
+        * [02-CAAnimation](02caanimation.md)
+            * [CABasicAnimation](cabasicanimation.md)
 * [UI补充](ui补充.md)
     * [Stack View](stack-view.md)
 * [Swift](swift入门.md)
