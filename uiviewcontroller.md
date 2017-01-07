@@ -45,7 +45,7 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 
 
 
- #####调用顺序
+ #####调用顺序,very important
 
 ```
 - (void)viewDidLoad {
