@@ -70,6 +70,7 @@
             * [01-CABasicAnimation](cabasicanimation.md)
             * [02-CAKeyframeAnimation](02-cakeyframeanimation.md)
             * [03-CATransition](catransition.md)
+            * [04-CAAnimationGroup](04-caanimationgroup.md)
 * [UI补充](ui补充.md)
     * [Stack View](stack-view.md)
 * [Swift](swift入门.md)
