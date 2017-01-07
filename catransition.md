@@ -1,6 +1,31 @@
 转场动画类型
 ![](/assets/Snip20170107_1.png)
-
+```
+//转场代码跟转场动画必须得要在同一个方法当中.
+    
+    
+    //转场代码
+    _i++;
+    if(_i > 3){
+        _i = 1;
+    }
+    NSString *imageName = [NSString stringWithFormat:@"%d",_i];
+    self.imageV.image = [UIImage imageNamed:imageName];
+    
+    
+    //添加转场动画
+    CATransition *anim = [CATransition animation];
+    anim.duration = 1;
+    //设置动画的起始点
+    anim.startProgress = 0.3;
+    //设置动画的截至点
+    anim.endProgress = 0.8;
+    
+    //设置转场类型
+    anim.type = @"pageCurl";
+    
+    [self.imageV.layer addAnimation:anim forKey:nil];
+```
 09-转场动画
 	
 	1.什么是转场动画?
