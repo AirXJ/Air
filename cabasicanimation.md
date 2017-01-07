@@ -1,4 +1,4 @@
-06-CABasicAnimation基础核心动画 
+01-CABasicAnimation基础核心动画 
 	
 	核心动画之作用在层上面.
 	动画的本质是改图层的某一个属性.
