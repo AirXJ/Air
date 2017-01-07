@@ -64,6 +64,7 @@
         * [02-CATransform3D](catransform3d.md)
         * [03-position和anchorPoint](03-position和anchorpoint.md)
         * [04-隐式动画](04-隐式动画.md)
+        * [05-时钟旋转](时钟旋转.md)
 * [UI补充](ui补充.md)
     * [Stack View](stack-view.md)
 * [Swift](swift入门.md)
