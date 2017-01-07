@@ -1,3 +1,11 @@
+	1.帧动画介绍:
+		CAKeyframeAnimation它可以在多个值之间进行动画.
+		设置多值之间的属性为:
+		后面是一个数组,就是要设置的多个值.
+		anim.values = @[];
+		
+		它还可以根据一个路径做动画.
+		anim.path = 自己创建的路径.
 ```
 //1.创建动画对象
     CAKeyframeAnimation *anim = [CAKeyframeAnimation animation];
