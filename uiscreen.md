@@ -1,0 +1,1 @@
+>[UIScreen mainScreen]lscale获取当前屏幕与像素的比例 将图片的宽高乘以它，得到点转换后像素值的
