@@ -7,8 +7,8 @@
 
 ```
 
--  修改按钮图片的尺寸
-自定义按钮，重写imageRectForContentRect方法
+
+- 自定义按钮
 
 ```
 //返回当前按钮当中ImageView的位置尺寸
