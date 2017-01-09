@@ -1,5 +1,9 @@
 01-CALayer的基本操作.
 
+
+>UIImageView当中Image并不是直接添加在层上面的.这是添加在layer当中的contents里. 我们设置层的所有属性它只作用在层上面.对contents里面的东西并不起作用.所以我们看不到图片有圆角的效果.
+
+
 ```
 1.CALayer简介:
     CALayer我们又称它叫做层.
