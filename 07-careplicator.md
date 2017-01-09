@@ -5,6 +5,7 @@
 @implementation VCView
 
 
+//修改UIView.layer的类型威复制层
 //返回当前UIView内容layer类型
 +(Class)layerClass {
     return [CAReplicatorLayer class];
