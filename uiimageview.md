@@ -1,5 +1,6 @@
 ## - 添加图片毛玻璃效果
 > 裁剪图片的方法 CGImageCreateWithImageInRect
+
 [^知识扩充:layery.contentsRect决定layer的图片的contents的显示范围，取值范围是)(CGRect){0,0,1,1｝]
 
 
