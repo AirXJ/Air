@@ -5,7 +5,7 @@
 
 position和anchorPoint是CAlayer的两个属性,位置重合.
 
-我们以前修改一个控件的位置都是能过Frame的方式进行修改.
+我们以前修改一个控件的位置都是能过Frame的方式进行修改，其实frame由position决定,所以center和position同一个点。.
 
 现在利用CALayer的position和anchorPoint属性也能够修改控件的位置.
 
