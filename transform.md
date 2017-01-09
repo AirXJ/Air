@@ -1,5 +1,8 @@
 # UIView的一个属性
+
 CG动画也是绕着锚点的。anchorPoint
+
+&gt;只绕着z轴做旋转，因为矩阵里第三列永远是001.  
 1.CGAffineTransformMake与CGAffineTransform的区别?
 
 只有x，y轴，所以结构体里就2组数据。  
