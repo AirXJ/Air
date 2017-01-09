@@ -16,7 +16,6 @@ layer的CATransform3D属性.只有旋转的时候才可以看出3D的效果.
 
 self.topImageV.layer.transform = CATransform3DIdentity;
 ```
-```
 有4组数据，有3个轴。
 
 旋转  
@@ -34,6 +33,6 @@ NSValue *value = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI,
 什么时候KVC?  
 当需要做 些快速缩放,平移,维的旋转时KVC.  
 如: [_imageView.layer setValue:@0.5 forKeyPath:@"transform.scale"];快速的进 缩放.后forKeyPath属性值不是乱写的.苹果 档当中给了相关的属性.
-```
+
 ![](/assets/屏幕快照 2017-01-07 11.37.00.png)
 
