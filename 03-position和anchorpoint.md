@@ -9,7 +9,8 @@
 
 >现在利用CALayer的position和anchorPoint属性也能够修改控件的位置.
 
-[^知识扩充:layery.contentsRect决定layer的图片的contents的显示范围，取值范围是)(CGRect){0,0,1,1｝]
+[^知识扩充:layery.contentsRect决定layer的图片的contents的显示范围，取值范围是)(CGRect){0,0,1,1},它的锚点也会跟着范围缩小:具体查看代码图片翻折]
+
 
 ```
 这两个属性是配合使用的.
