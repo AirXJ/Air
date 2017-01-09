@@ -26,10 +26,21 @@ CATransform3DMakeTranslation(x,y,z)
 缩放  
 CATransform3DMakeScale(x,y,z);
 
-可以通过KVC的形式进行设置属性.  
-但是CATransform3DMakeRotation它的值,是一个结构体,所以要把结构转成对象.  
-NSValue *value = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 1, 0, 0)];[_imageView.layer setValue:value forKeyPath:@"transform.scale"];
+### 可以通过KVC的形式进行设置属性.  
 
+>[^请注意错误写法]
+
+```
+//但是CATransform3DMakeRotation它的值,是一个结构体,所以要把结构转成对象.  
+NSValue *value = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 1, 0, 0)];
+//下面的写法肯定是错的
+[_imageView.layer setValue:value forKeyPath:@"transform.scale"];
+//正确的写法
+[_imageView.layer setValue:value forKeyPath:@"transform"];
+[_imageView.layer setValue:@(M_PI) forKeyPath:@"transform.rotation.z"];
+
+
+```
 什么时候KVC?  
 当需要做 些快速缩放,平移,维的旋转时KVC.  
 如: [_imageView.layer setValue:@0.5 forKeyPath:@"transform.scale"];快速的进 缩放.后forKeyPath属性值不是乱写的.苹果 档当中给了相关的属性.
