@@ -8,7 +8,8 @@
 >我们以前修改一个控件的位置都是能过Frame的方式进行修改，其实UIView的frame由position决定,所以center和position同一个点。.
 
 >现在利用CALayer的position和anchorPoint属性也能够修改控件的位置.
-[^知识扩充:layery.contentRect决定layer的显示范围，取值范围是｛0,0,1,1｝]
+
+[^知识扩充:layery.contentsRect决定layer的图片的contents的显示范围，取值范围是)(CGRect){0,0,1,1｝]
 
 ```
 这两个属性是配合使用的.
