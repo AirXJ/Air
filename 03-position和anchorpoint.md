@@ -1,10 +1,9 @@
 ***
 ######  03-position和anchorPoint(默认值0～1)
 [^两者至始至终重合,锚点默认是(0.5,0.5),UIView的center,就是它内部layer的position,两个计算公式同一个，不要用肉眼去乱想，计算公式才是真理。无论是旋转,缩放都是绕着锚点进行的.]
-
 ![](/assets/屏幕快照 2017-01-06 15.01.09.png)
 
-position和anchorPoint是CAlayer的两个属性.
+position和anchorPoint是CAlayer的两个属性,位置重合.
 
 我们以前修改一个控件的位置都是能过Frame的方式进行修改.
 
