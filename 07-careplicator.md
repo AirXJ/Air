@@ -1,4 +1,20 @@
+
 ```
+#import "VCView.h"
+
+@implementation VCView
+
+
+//返回当前UIView内容layer类型
++(Class)layerClass {
+    return [CAReplicatorLayer class];
+}
+
+
+
+
+@end
+
 //复制层
     CAReplicatorLayer *repL = [CAReplicatorLayer  layer];
     repL.backgroundColor = [UIColor redColor].CGColor;
