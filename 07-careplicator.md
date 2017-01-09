@@ -5,6 +5,14 @@
     repL.frame = self.contentV.bounds;
     [self.contentV.layer addSublayer:repL];
     
+    //绕着复制层的锚点进行旋转
+    repL.instanceTransform = CATransform3DMakeRotation(M_PI, 1, 0, 0);
+    
+    //阴影
+    repL.instanceRedOffset -= 0.1;
+    repL.instanceGreenOffset -= 0.1;
+    repL.instanceBlueOffset -= 0.1;
+    repL.instanceAlphaOffset -= 0.1;
     
     //添加音量震动条
     CALayer *layer = [CALayer layer];
