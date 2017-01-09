@@ -47,6 +47,6 @@
     repL.instanceCount = 3;
     //对复制出来的子层做形变操作(每一个都是相对于上一个子层做的形变)
     repL.instanceTransform = CATransform3DMakeTranslation(45, 0, 0);
-    //设置复制出来的子层动画的延时执行时长
+    //设置复制出来的子层动画的延时执行时长,视觉上感觉动画慢慢出来，粒子效果和音乐震动条波浪形变
     repL.instanceDelay = 1;
     ```
