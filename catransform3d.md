@@ -1,7 +1,21 @@
 02-CATransform3D
 
 layer的CATransform3D属性.只有旋转的时候才可以看出3D的效果.
+##### 设置默认transform或者修改图片大小
+```
+ //近大远小
+    CATransform3D transform = CATransform3DIdentity;
+    //眼睛离屏幕的距离
+    transform.m34 = -1 / 300.0;
+    
+    self.gradientL.opacity = transP.y * 1 / 200.0;
+    
+    
+    //self.topImageV.layer.transform  = CATransform3DMakeRotation(-angle, 1, 0, 0);
+    self.topImageV.layer.transform = CATransform3DRotate(transform, -angle, 1, 0, 0 );
 
+self.topImageV.layer.transform = CATransform3DIdentity;
+```
 有4组数据，有3个轴。
 
 旋转  
