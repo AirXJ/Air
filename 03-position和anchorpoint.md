@@ -1,14 +1,16 @@
 ***
 ######  03-position和anchorPoint(默认值0～1)
-[^两者至始至终重合,锚点默认是(0.5,0.5),UIView的center,就是它内部layer的position,frame由position决定，所以center和position同一个点。无论是旋转,缩放都是绕着锚点进行的.]
+[^锚点默认是(0.5,0.5),无论是旋转,缩放都是绕着锚点进行的.]
 ![](/assets/屏幕快照 2017-01-06 15.01.09.png)
 
-position和anchorPoint是CAlayer的两个属性,位置重合.
+>position和anchorPoint是CAlayer的两个属性,位置重合.
 
-我们以前修改一个控件的位置都是能过Frame的方式进行修改，其实frame由position决定,所以center和position同一个点。.
+>我们以前修改一个控件的位置都是能过Frame的方式进行修改，其实UIView的frame由position决定,所以center和position同一个点。.
 
-现在利用CALayer的position和anchorPoint属性也能够修改控件的位置.
+>现在利用CALayer的position和anchorPoint属性也能够修改控件的位置.
+[^知识扩充:layery.contentRect决定layer的显示范围，取值范围是｛0,0,1,1｝]
 
+```
 这两个属性是配合使用的.
 
 position:它是用来设置当前的layer在父控件当中的位置的.
@@ -26,4 +28,4 @@ anchorPoint又称锚点.就是把锚点定到position所指的位置.
 两者结合使用.想要修改某个控件的位置,我们可以设置它的position点.
 
 设置完毕后.layer身上的anchorPoint会自动定到position所在的位置.
-
+```
