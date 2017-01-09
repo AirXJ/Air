@@ -69,7 +69,7 @@
                 * [03-position和anchorPoint](03-position和anchorpoint.md)
                 * [04-隐式动画自定义层才有](04-隐式动画.md)
                 * [05-时钟旋转](时钟旋转.md)
-                * [06-CAGradientLayer](cagradientlayer.md)
+                * [06-渐变层CAGradientLayer](cagradientlayer.md)
                 * [07-复制层CAReplicatorLayer](07-careplicator.md)
             * [02-CAAnimation](02caanimation.md)
                 * [01-CABasicAnimation](cabasicanimation.md)

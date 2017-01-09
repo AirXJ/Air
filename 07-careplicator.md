@@ -22,4 +22,6 @@
     repL.instanceCount = 3;
     //对复制出来的子层做形变操作(每一个都是相对于上一个子层做的形变)
     repL.instanceTransform = CATransform3DMakeTranslation(45, 0, 0);
+    //设置复制出来的子层动画的延时执行时长
+    repL.instanceDelay = 1;
     ```
