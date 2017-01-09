@@ -25,7 +25,7 @@ x,y,z分别代表x,y,z轴.CATransform3DMakeRotation(M_PI, 1, 0, 0)[^绕x轴旋�
 平移  
 CATransform3DMakeTranslation(x,y,z)  
 缩放  
-CATransform3DMakeScale\(x,y,z);
+CATransform3DMakeScale(x,y,z);
 
 可以通过KVC的形式进行设置属性.  
 但是CATransform3DMakeRotation它的值,是一个结构体,所以要把结构转成对象.  
