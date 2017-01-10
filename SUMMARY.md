@@ -71,6 +71,7 @@
                 * [05-时钟旋转](时钟旋转.md)
                 * [06-渐变层CAGradientLayer](cagradientlayer.md)
                 * [07-复制层CAReplicatorLayer](07-careplicator.md)
+                * 08-CAShapeLayer
             * [02-CAAnimation](02caanimation.md)
                 * [01-CABasicAnimation](cabasicanimation.md)
                 * [02-帧动画CAKeyframeAnimation](02-cakeyframeanimation.md)
