@@ -1,5 +1,5 @@
 ***
-######  [^像阴影一样的]
+######  [^像阴影一样的,项目UI晋级:06-图片折叠]
 ```
 //渐变层
     CAGradientLayer *gradientL = [CAGradientLayer layer];
