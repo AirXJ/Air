@@ -1,7 +1,7 @@
 02-CATransform3D
 
 layer的CATransform3D属性.只有旋转的时候才可以看出3D的效果.
-##### 设置默认transform或者修改图片大小
+##### 设置回默认transform或者修改图片大小
 ```
     CATransform3D transform = CATransform3DIdentity;
     //近大远小
