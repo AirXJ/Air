@@ -4,6 +4,7 @@
 * [学习资源](资源地质.md)
 * [自己犯过的错误](自己犯过的错误.md)
 * [单词积累](单词积累.md)
+* [SVN源代码管理](svn源代码管理.md)
 * [OC与 Xcode](oc.md)
     * [继承](继承.md)
     * [pch文件](pch文件.md)
@@ -104,10 +105,5 @@
         * [KVC内部实现原理](kvc内部实现原理.md)
 * [Object-C新特性](object-c新特性.md)
 * [xcode调试技巧](xcode调试技巧.md)
-* [HTML](html.md)
-    * [CSS](css.md)
-        * [选择器](选择器.md)
-        * [选择器的优先级别](选择器的优先级别.md)
-        * [常用属性](常用属性.md)
-    * [HTML5](html5.md)
+* SVN源代码管理
 
