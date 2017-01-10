@@ -32,6 +32,7 @@
     * [UIScreen](uiscreen.md)
     * [UILabel](uilabel.md)
     * [UIImageView](uiimageview.md)
+        * [动画](动画.md)
     * [UIButton](uibutton.md)
         * [解决与手势的冲突](解决与手势的冲突.md)
     * [UITableView](uitableview.md)
