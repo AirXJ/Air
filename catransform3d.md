@@ -3,8 +3,8 @@
 layer的CATransform3D属性.只有旋转的时候才可以看出3D的效果.
 ##### 设置默认transform或者修改图片大小
 ```
- //近大远小
     CATransform3D transform = CATransform3DIdentity;
+    //近大远小
     //眼睛离屏幕的距离
     transform.m34 = -1 / 300.0;
     
