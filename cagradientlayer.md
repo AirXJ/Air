@@ -1,3 +1,5 @@
+***
+######  [^像阴影一样的]
 ```
 //渐变层
     CAGradientLayer *gradientL = [CAGradientLayer layer];
