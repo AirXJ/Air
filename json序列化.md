@@ -42,4 +42,5 @@
      */
  NSData *data = [NSJSONSerialization dataWithJSONObject:strM options:NSJSONWritingPrettyPrinted error:nil];
 ``` 
+>.plist文件如何转换成.json文件。先转换成数组，再序列化，然后保存。
 
