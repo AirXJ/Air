@@ -16,6 +16,7 @@
     * [NSString](nsstring.md)
         * [地址路径](地址路径.md)
     * [分类](分类.md)
+        * [字典数组打印中文分类](字典数组打印中文分类.md)
 * [基础UI](chapter1.md)
     * [UIApplication](uiapplication.md)
         * [可以干什么](管理状态栏.md)
