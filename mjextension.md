@@ -1,7 +1,7 @@
 ###  可以将plist转换成模型数组
 **在NSObject+MJKeyValue.h文件里搜plist或者file每个版本方法名都不一样**
 
-json反序列化面向模型开发
+###### json反序列化面向模型开发
 ```
 //替换
     [XMGVideo mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
