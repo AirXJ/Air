@@ -21,5 +21,10 @@
 ||NSNumbers必须是正式的NSNumber而且不能是无穷大|
 ```         
  BOOL isValid = [NSJSONSerialization isValidJSONObject:strM];
+ /*
+     第一个参数:要转换的OC对象
+     第二个参数:选项NSJSONWritingPrettyPrinted 排版 美观
+     */
+ NSData *data = [NSJSONSerialization dataWithJSONObject:strM options:NSJSONWritingPrettyPrinted error:nil];
 ``` 
 
