@@ -46,5 +46,6 @@
 ###### 复杂json格式化方法
 http://tool.oschina.net/codeformat/json 
 
-  
+### JSON面向模型开发
+>JSON反序列化，面向字典开发，容易出错，所以要转换成模型字典。字典变模型kvc  
   
