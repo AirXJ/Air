@@ -10,7 +10,22 @@
 [^类方法名是data或者JSONObject、With组合]
 
 ![](/assets/屏幕快照 2017-01-11 11.24.46.png)
-
+### JSON->OC 反序列化
+```
+        /*
+         第一个参数:JSON的二进制数据
+         第二个参数:
+         第三个参数:错误信息
+         */
+        /* 位移枚举第一个值不是0，默认可以是kNilOption提高效率，除非第三种情况。
+         NSJSONReadingMutableContainers = (1UL << 0), 可变字典和数组
+         NSJSONReadingMutableLeaves = (1UL << 1),      内部所有的字符串都是可变的 ios7之后又问题  一般不用
+         NSJSONReadingAllowFragments = (1UL << 2)   既不是字典也不是数组,则必须使用该枚举值
+         */
+        NSString *strM = @"\"wendingding\"";
+        //        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        id obj = [NSJSONSerialization JSONObjectWithData:[strM dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
+```
 
 ### OC->JSON 序列化[^单单字符串不能序列化]
 |注意|并不是所有的OC对象都能序列化为JSON|
