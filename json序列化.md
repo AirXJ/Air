@@ -13,11 +13,12 @@
 
 
 ### OC->JSON 序列化[^单单字符串不能序列化]
->注意:并不是所有的OC对象都能序列化为JSON
-     - 最外层必须是 NSArray or NSDictionary
-     - 所有的元素必须是 NSString, NSNumber, NSArray, NSDictionary, or NSNull
-     - 字典中所有的key都必须是 NSStrings类型的
-     - NSNumbers必须是正式的NSNumber而且不能是无穷大
+|注意|并不是所有的OC对象都能序列化为JSON|
+|:--|------------------------------|
+||最外层必须是 NSArray or NSDictionary|
+ ||所有的元素必须是 NSString, NSNumber, NSArray, NSDictionary, or NSNull|
+| |字典中所有的key都必须是 NSStrings类型的|
+||NSNumbers必须是正式的NSNumber而且不能是无穷大|
 ```         
  BOOL isValid = [NSJSONSerialization isValidJSONObject:strM];
 ``` 
