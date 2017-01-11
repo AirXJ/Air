@@ -12,3 +12,6 @@
     //字典转模型
     self.videos = [XMGVideo mj_objectArrayWithKeyValuesArray:dictM[@"videos"]];
 ```
+
+### 如何学习第三方框架
+![](/assets/Snip20170111_3.png)
