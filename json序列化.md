@@ -11,6 +11,8 @@
 
 ![](/assets/屏幕快照 2017-01-11 11.24.46.png)
 
+
+### OC->JSON 序列化
 >注意:并不是所有的OC对象都能转换为JSON
      - 最外层必须是 NSArray or NSDictionary
      - 所有的元素必须是 NSString, NSNumber, NSArray, NSDictionary, or NSNull
