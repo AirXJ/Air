@@ -47,5 +47,5 @@
 http://tool.oschina.net/codeformat/json 
 
 ### JSON面向模型开发
->JSON反序列化，面向字典开发，容易出错，所以要转换成模型字典。字典变模型kvc  
+>JSON反序列化，面向字典开发，容易出错，所以要转换成模型字典。字典变模型kvc。kvc有缺陷，字典复杂度，所以用第三方框架解析。
   
