@@ -44,4 +44,7 @@
 >.plist文件如何转换成.json文件。先转换成数组，再序列化，然后保存。
 
 ###### 复杂json格式化方法
-http://tool.oschina.net/codeformat/json   
+http://tool.oschina.net/codeformat/json 
+
+  
+  
