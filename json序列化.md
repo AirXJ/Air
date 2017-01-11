@@ -12,8 +12,8 @@
 ![](/assets/屏幕快照 2017-01-11 11.24.46.png)
 
 
-### OC->JSON 序列化
->注意:并不是所有的OC对象都能转换为JSON
+### OC->JSON 序列化[^单单字符串不能序列化]
+>注意:并不是所有的OC对象都能序列化为JSON
      - 最外层必须是 NSArray or NSDictionary
      - 所有的元素必须是 NSString, NSNumber, NSArray, NSDictionary, or NSNull
      - 字典中所有的key都必须是 NSStrings类型的
