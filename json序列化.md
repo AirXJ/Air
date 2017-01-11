@@ -40,7 +40,7 @@ s
      第二个参数:选项NSJSONWritingPrettyPrinted 排版 美观
      */
  NSData *data = [NSJSONSerialization dataWithJSONObject:strM options:NSJSONWritingPrettyPrinted error:nil];
-``` 
+``` ### 
 >.plist文件如何转换成.json文件。先转换成数组，再序列化，然后保存。
 
 ###### 复杂json格式化方法
