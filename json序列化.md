@@ -10,3 +10,13 @@
 [^类方法名是data或者JSONObject、With组合]
 
 ![](/assets/屏幕快照 2017-01-11 11.24.46.png)
+
+>注意:并不是所有的OC对象都能转换为JSON
+     - 最外层必须是 NSArray or NSDictionary
+     - 所有的元素必须是 NSString, NSNumber, NSArray, NSDictionary, or NSNull
+     - 字典中所有的key都必须是 NSStrings类型的
+     - NSNumbers必须是正式的NSNumber而且不能是无穷大
+```         
+ BOOL isValid = [NSJSONSerialization isValidJSONObject:strM];
+``` 
+
