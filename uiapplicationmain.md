@@ -11,7 +11,7 @@ main -> UIApplicationMain,在这之前，加载类的信息。
 
 3.开启主运行循环,作用接收事件,让程序一直运行。(runloop，每一个线程都有runloop，主线程有一个runloop自动开启)
 
-4.加载info.plist,判断下有木有指定main.storyboard,如果指定就会去加载：1.创建窗口 2.设置根控制器 3.显示窗口
+4.加载info.plist,判断下有木有指定main.storyboard,如果指定就会去加载:1.创建窗口 2.设置根控制器 3.显示窗口
 三.`函数介绍`:
 
 NSStringFromClass:根据一个类名生成一个类名字符串
