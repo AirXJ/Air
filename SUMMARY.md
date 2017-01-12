@@ -5,6 +5,8 @@
 * [单词积累](单词积累.md)
 * [自己犯过的错误](自己犯过的错误.md)
 * [SVN源代码管理](svn源代码管理.md)
+* [Xcode配置](xcode配置.md)
+* [xcode调试技巧](xcode调试技巧.md)
 * [OC与 Xcode](oc.md)
     * [继承](继承.md)
     * [pch文件](pch文件.md)
@@ -111,8 +113,6 @@
     * [runtime字典转模型](runtime字典转模型.md)
         * [自动生成属性代码](自动生成属性代码.md)
         * [KVC内部实现原理](kvc内部实现原理.md)
-* [Object-C新特性](object-c新特性.md)
 * [xcode调试技巧](xcode调试技巧.md)
-* SVN源代码管理
 * [Xcode配置](xcode配置.md)
 
