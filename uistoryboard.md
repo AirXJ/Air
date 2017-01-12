@@ -30,7 +30,7 @@
 
 > 从xib或storyboard加载控件，只调用一次
 
-######  LaunchScreen
+#####  LaunchScreen
 优先级:LaunchScreen > LaunchImage
     在xcode配置了,不起作用 1.清空xcode缓存 2.直接删掉程序 重新运行
     如果是通过LaunchImage设置启动界面,那么屏幕的可视范围由图片决定
