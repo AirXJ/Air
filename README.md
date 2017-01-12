@@ -15,7 +15,7 @@ command k 清空xcode缓存
  command option esc 任务管理器
  command option ［或者］在xcode中移动代码上下，只要光标放在代码前
  command option = 故事板自动对齐约束
- command shift H退出app
+ command shift H 退出app
  
 ```
 ***
