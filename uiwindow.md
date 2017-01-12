@@ -1,5 +1,6 @@
 # 04-UIWindow
 [^用了LaunchImage,如果少了图片那么启动之后的窗口的可视范围就会根启动图片一样大，就可能出现上下是黑的情况]
+
 一.`什么时候创建`
 
 1.加载info.plist,判断有没有指定main.storyboard,指定了main.storyboard,就会去加载main.storyboard,执行main.storyboard的时候创建.
