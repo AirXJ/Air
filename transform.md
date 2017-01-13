@@ -1,5 +1,6 @@
 # UIView的一个属性
-
+`清空transform`
+ btn.transform = CGAffineTransformIdentity;
 CG动画也是绕着锚点的。anchorPoint
 
 >只绕着z轴做旋转，因为矩阵里第三列永远是001.transform并没有修改center和position，它修改的是frame。假如绕其他轴，就需要用核心动画。绕着中心的锚点旋转  
