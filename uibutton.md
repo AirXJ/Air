@@ -29,7 +29,9 @@
 //
 //}
 
-
+-(void)layoutSubviews{
+    [super layoutSubviews];
+}
 
 //取消按钮高亮状态下做的事,让按钮马上高亮
 -(void)setHighlighted:(BOOL)highlighted {
