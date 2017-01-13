@@ -32,6 +32,9 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
      //子控件的布局
+    self.imageView.frame = CGRectMake(imageX, imageY, imageW, imageH);
+    
+    self.titleLabel.frame = CGRectMake(labelX, labelY, labelW, labelH);
 }
 
 //取消按钮高亮状态下做的事,让按钮马上高亮
