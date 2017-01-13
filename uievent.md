@@ -1,3 +1,6 @@
+[^UIControlEventTouchDown touchbegin]
+[^UIControlEventTouchUpInside touchend]
+
 ```
 1.事件是怎么样产生与传递的?
   每产生一个事件，就会产生一个UIEvent对象，UIEvent还提供了相应的方法可以获得在某个view上面的触摸对象(UITouch).
