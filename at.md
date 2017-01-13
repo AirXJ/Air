@@ -1,7 +1,7 @@
 ```
 /*
  字符属性
- 
+ dict[NSFontAttributeName];
  字符属性可以应用于 attributed string 的文本中。
  
  NSString *const NSFontAttributeName;(字体)
