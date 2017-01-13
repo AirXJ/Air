@@ -31,7 +31,7 @@
 
 -(void)layoutSubviews{
     [super layoutSubviews];
-     //子控件的布局
+     //子控件的布局imageView、titleLabel是系统定义的，不是自定义的
     self.imageView.frame = CGRectMake(imageX, imageY, imageW, imageH);
     
     self.titleLabel.frame = CGRectMake(labelX, labelY, labelW, labelH);
