@@ -1,6 +1,6 @@
 - 设置按钮的类型只能在初始化的时候设置
 ![](/assets/屏幕快照 2017-01-08 15.18.06.png)
-- 监听按钮点击事件
+- 监听按钮点击事件［故事板按住control点击鼠标连接到控制器或者uiview］
 
 ```obj
  [button addTarget:self action:@selector(demo:) forControlEvents:UIControlEventTouchUpInside];
@@ -8,7 +8,7 @@
 ```
 
 
-- 新建自定义按钮,继承重写方法
+### 新建自定义按钮,继承重写方法
 
 ```
 //返回当前按钮当中ImageView的位置尺寸
