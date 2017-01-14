@@ -9,6 +9,7 @@
 c文件无法识别#import]
 如何设置(这里Precompile Prefix Header是YES，路径名是工程路径，不是整个工程文件夹GameLive/GameLive/...，第二层就可以)
 ![](/assets/pch文件文件路径设置生效.png)
+![](/assets/屏幕快照 2017-01-14 19.32.58.png)
 ***
 - pch作用:
  - 1.存放一些公用的宏
