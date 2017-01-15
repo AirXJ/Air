@@ -16,7 +16,10 @@
  - git commit -m "初始化项" : 将在暂缓区的所有内容提交到本地版本库, 清空暂缓区
  - git add . : 将在 作区所有不在暂缓区的所有内容添加到暂缓区注意: 添加的 件或者是修改的 件都要通过add命令将该 件添加到暂缓区
  
-4.查看 件状态 git status红  : 该 件被添加或者被修改,但是没有添加到git的暂缓区 绿  : 该 件在暂缓区,但是没有提交到本地版本库
+4.查看文件状态
+- git status'
+红色 : 该文件被添加或者被修改,但是没有添加到git的暂缓区
+绿色 : 该文件在暂缓区,但是没有提交到本地版本库
 
 5.给命令 起别名git config alias.st “status”git config alias.ci “commit -m”git config —global alias.st “status"
  
