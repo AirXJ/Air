@@ -28,7 +28,7 @@
 ##### 5.给命令行起别名
 - git config alias.st "status"
 - git config alias.ci "commit -m"
-- git config —global alias.st "status"
+- git config --global alias.st "status"
  
 #####6.删除文件
 - git rm person.m : 将person.m删除
