@@ -4,11 +4,17 @@
  - `git ini` 
  
 2.如果使用GIT,必须给GIT配置用户名和邮箱。给当前的git仓库配置用户名和邮箱
-- git config user.name “XMG”
-- git config user.email “XMG@163.com” 
-给git配置全局的用户和邮箱git config —global user.name “XMG”git config —global user.email “XMG@163.com” 
+- git config user.name "XMG"
+- git config user.email "XMG@163.com"
+给git配置全局的用户和邮箱
+－ git config —global user.name "XMG"
+- git config —global user.email "XMG@163.com"
+
 3.初始化项
- touch main.m : 创建了main.mgit add main.m : 将main.m添加到暂缓区git commit -m “初始化项 ” : 将在暂缓区的所有内容提交到本地版本库, 清空暂缓区git add . : 将在 作区所有不在暂缓区的所有内容添加到暂缓区注意: 添加的 件或者是修改的 件都要通过add命令将该 件添加到暂缓区
+ - touch main.m : 创建了main.m
+ - git add main.m : 将main.m添加到暂缓区
+ - git commit -m "初始化项" : 将在暂缓区的所有内容提交到本地版本库, 清空暂缓区
+ - git add . : 将在 作区所有不在暂缓区的所有内容添加到暂缓区注意: 添加的 件或者是修改的 件都要通过add命令将该 件添加到暂缓区
  
 4.查看 件状态 git status红  : 该 件被添加或者被修改,但是没有添加到git的暂缓区 绿  : 该 件在暂缓区,但是没有提交到本地版本库
 
