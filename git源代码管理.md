@@ -24,12 +24,14 @@
 
  绿色 : 该文件在暂缓区,但是没有提交到本地版本库
 
-#####5.给命令行起别名
+
+##### 5.给命令行起别名
 - git config alias.st "status"
 - git config alias.ci "commit -m"
 - git config —global alias.st "status"
  
-#####6.删除文件git rm person.m : 将person.m删除
+#####6.删除文件
+- git rm person.m : 将person.m删除
 
 #####7.查看版本信息
 - git log - > 版本号是由sha1算法生成的40位哈希值 
