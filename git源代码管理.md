@@ -70,7 +70,7 @@
 
 4.发现1.0版本有bug,在经理的文件夹下面创建一个文件夹, 于修复bug,将共 享版本库所有内容clone
  - git clone 
-5.将当前的代码转为1.0标签,创建分 ,并切换到该分
+5.将当前的代码转为1.0标签,创建分支,并切换到该分支
  - git checkout weibo1.0 : 转为1.0标签git checkout -b weibo1.1fixbug : 创建分 ,并切换到该分                    
 6.在分 中修复bug,上传到AppStore,将修复好的版本,打上tag,并上传到共享 版本库git tag -a weibo1.1 -m “这是修复了1.0bug的1.1版本”git push origin weibo1.1 
 7.跟当前正在开发的2.0版本进行合并
