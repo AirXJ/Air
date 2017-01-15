@@ -52,7 +52,7 @@
 - git服务器的搭建非常繁琐(linux)，那本很厚的git书介绍怎么搭建
 - 可以把代码托管到(Github/OSChina)  
 - 一个文件夹 
-- 一个U盘
+- 一个U盘 小码哥资料里有或者https://my.oschina.net/leeming/blog/85029
 
 #####1.一个文件夹作为共享版本库
 - git init —bare
