@@ -88,7 +88,6 @@
 - 经理项空的代码仓库push代码 source control -> configuration -> 添加共享版本库地址
 
 ####  五.Github上托管代码
- 
 1.使用HTTPS认证
 
 2.使用SSHKeys认证
