@@ -46,7 +46,7 @@
 [^第四个第五个随便用哪个]
 
 #####9.给log起别名[^了解]
-- git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+- git config --global alias.log "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 ### 二.共享版本库[^多人开发，本地的代码库共享，需要共享版本库] 
 - git服务器的搭建非常繁琐(linux)，那本很厚的git书介绍怎么搭建
