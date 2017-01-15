@@ -59,6 +59,7 @@
 - git push -f :强制上传到共享版本库
 - git reset —hard HEAD^ :回到上 个版本(经理)
 
+
 #### 三.版本备份(了解)
 1.1.0版本开发完毕,将1.0版本上传到AppStore,对1.0版本进 备份(打上标签)git tag -a weibo1.0 -m "这是1.0版本"git tag
  
