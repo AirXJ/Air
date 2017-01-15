@@ -45,7 +45,7 @@
 - git reset --hard 版本号(哈希值一般前5位，前4位一样被雷劈)
 [^第四个第五个随便用哪个]
 
-#####9.给log起别名
+#####9.给log起别名[^了解]
 - git config --global alias.lg "log --color --graph -- pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" 
 
 #### 二.共享版本库 
