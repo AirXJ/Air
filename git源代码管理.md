@@ -21,9 +21,12 @@
 红色 : 该文件被添加或者被修改,但是没有添加到git的暂缓区
 绿色 : 该文件在暂缓区,但是没有提交到本地版本库
 
-5.给命令 起别名git config alias.st “status”git config alias.ci “commit -m”git config —global alias.st “status"
+5.给命令行起别名
+- git config alias.st "status"
+- git config alias.ci "commit -m"
+- git config —global alias.st "status"
  
-6.删除 件git rm person.m : 将person.m删除
+6.删除文件git rm person.m : 将person.m删除
 
 7.查看版本信息
 - git log - > 版本号是由sha1算法 成的40位哈希值 
@@ -50,14 +53,14 @@
 2.将共享版本库的所有内容下载到本地 
 - git clone 共享版本库地址
 3.删除忽略 件
-- touch .gitignore —> Github ->搜索”.gitignore” -> 选择*最多的->找到 Object-C,复制下来
+- touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C,复制下来
 4.版本回退
 - git reset —hard HEAD^ :回到上 个版本(张三)
 - git push -f :强制上传到共享版本库
 - git reset —hard HEAD^ :回到上 个版本(经理)
 
 ### 三.版本备份(了解)
-1.1.0版本开发完毕,将1.0版本上传到AppStore,对1.0版本进 备份(打上标签)git tag -a weibo1.0 -m “这是1.0版本”git tag
+1.1.0版本开发完毕,将1.0版本上传到AppStore,对1.0版本进 备份(打上标签)git tag -a weibo1.0 -m "这是1.0版本"git tag
  
 2.需要将标签push到共享版本库
  - git push origin weibo1.0
@@ -69,7 +72,7 @@
 5.将当前的代码转为1.0标签,创建分 ,并切换到该分
  - git checkout weibo1.0 : 转为1.0标签git checkout -b weibo1.1fixbug : 创建分 ,并切换到该分                    
 6.在分 中修复bug,上传到AppStore,将修复好的版本,打上tag,并上传到共享 版本库git tag -a weibo1.1 -m “这是修复了1.0bug的1.1版本”git push origin weibo1.1 
-7.跟当前正在开发的2.0版本进 合并
+7.跟当前正在开发的2.0版本进行合并
  source Control - > pull ->weibo1.1fixbug 
 8.删除分支
 - git branch :查看当前在哪个分支
