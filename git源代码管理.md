@@ -61,7 +61,7 @@
 #####3.删除忽略文件
 - touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C,复制下来
 #####4.版本回退
-- git reset —hard HEAD^ :回到上一个版本(张三)
+- git reset --hard HEAD^ :回到上一个版本(张三)
 - git push -f :强制上传到共享版本库
 - git reset —hard HEAD^ :回到上一个版本(经理)
 
