@@ -84,8 +84,8 @@
 - git push origin —delete weibo1.1fixbug
 
 ####四.新人代码仓库
-- 创建一个文件夹作为共享版本库项 
-- 经理项空的代码仓库push代码 source control -> configuration -> 添加共享版本库地址
+- 创建一个文件夹作为共享版本库 
+- 项目经理项目的代码仓库push代码 source control -> configuration -> 添加共享版本库地址
 
 ####  五.Github上托管代码
 1.使用HTTPS认证
