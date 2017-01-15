@@ -1,7 +1,7 @@
 
  ### 一.命令行的演示 
 1.初始化一个代码仓库
- - `git ini` 
+ - `git init` 
  
 2.如果使用GIT,必须给GIT配置用户名和邮箱。给当前的git仓库配置用户名和邮箱
 - git config user.name "XMG"
