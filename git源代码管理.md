@@ -80,6 +80,7 @@
 - git branch -d weibo1.1fixbug : 删除本地分支
 - git branch -r -d origin/weibo1.1fixbug :删除本地版本库分支 
 - git push origin —delete weibo1.1fixbug
+
 ####四.新人代码仓库
 - 创建一个文件夹作为共享版本库项 
 - 经理项空的代码仓库push代码 source control -> configuration -> 添 加共享版本库地址
