@@ -1,9 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [源代码管理](源代码管理.md)
-    * [GIT源代码管理](git源代码管理.md)
-    * [SVN源代码管理](svn源代码管理.md)
 * [学习资源](资源地质.md)
 * [单词积累](单词积累.md)
 * [自己犯过的错误](自己犯过的错误.md)
@@ -96,6 +93,9 @@
     * [Stack View](stack-view.md)
 * [网络](网络.md)
 * [Json序列化](json序列化.md)
+* [源代码管理](源代码管理.md)
+    * [GIT源代码管理](git源代码管理.md)
+    * [SVN源代码管理](svn源代码管理.md)
 * [Swift](swift入门.md)
     * [0.1.常量&变量](常量变量.md)
     * [0.2.逻辑分支](02逻辑分支.md)
