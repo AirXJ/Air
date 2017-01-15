@@ -37,7 +37,7 @@
 - git log - > 版本号是由sha1算法生成的40位哈希值 
 - git reflog : 可以查看所有版本回退的操作
 
-#####8.版本回退[^]
+#####8.版本回退[^结合git reflog方便使用]
 - git reset --hard HEAD : 没有提交版本,回到当前版本
 - git reset --hard HEAD^ : 回到上一个版本 
 - git reset --hard HEAD^^ : 回到上上个版本                   
