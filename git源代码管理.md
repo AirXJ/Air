@@ -51,14 +51,14 @@
 - 个 件夹 
 - 个U盘
 
-1.一个文件夹作为共享版本库
+######1.一个文件夹作为共享版本库
 - git init —bare
 
-2.将共享版本库的所有内容下载到本地 
+######2.将共享版本库的所有内容下载到本地 
 - git clone 共享版本库地址
-3.删除忽略文件
+######3.删除忽略文件
 - touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C,复制下来
-4.版本回退
+######4.版本回退
 - git reset —hard HEAD^ :回到上一个版本(张三)
 - git push -f :强制上传到共享版本库
 - git reset —hard HEAD^ :回到上一个版本(经理)
@@ -66,28 +66,28 @@
 
 #### 三.版本备份(了解)
 
-1.1.0版本开发完毕,将1.0版本上传到AppStore,对1.0版本进行备份(打上标签)git tag -a weibo1.0 -m "这是1.0版本"git tag
+######1.1.0版本开发完毕,将1.0版本上传到AppStore,对1.0版本进行备份(打上标签)git tag -a weibo1.0 -m "这是1.0版本"git tag
 
-2.需要将标签push到共享版本库
+######2.需要将标签push到共享版本库
  - git push origin weibo1.0
  
-3.开始2.0版本的开发
+######3.开始2.0版本的开发
 
-4.发现1.0版本有bug,在经理的文件夹下面创建一个文件夹, 于修复bug,将共 享版本库所有内容clone
+######4.发现1.0版本有bug,在经理的文件夹下面创建一个文件夹, 于修复bug,将共 享版本库所有内容clone
  - git clone
  
-5.将当前的代码转为1.0标签,创建分支,并切换到该分支
+######5.将当前的代码转为1.0标签,创建分支,并切换到该分支
  - git checkout weibo1.0 : 转为1.0标签
  - git checkout -b weibo1.1fixbug : 创建分支,并切换到该分支
                    
-6.在分支中修复bug,上传到AppStore,将修复好的版本,打上tag,并上传到共享版本库
+######6.在分支中修复bug,上传到AppStore,将修复好的版本,打上tag,并上传到共享版本库
 - git tag -a weibo1.1 -m "这是修复了1.0bug的1.1版本"
 - git push origin weibo1.1
 
-7.跟当前正在开发的2.0版本进行合并
+######7.跟当前正在开发的2.0版本进行合并
  source Control - > pull ->weibo1.1fixbug
  
-8.删除分支
+######8.删除分支
 - git branch :查看当前在哪个分支
 - git branch -r :查看本地版本库的分支
 - git branch -d weibo1.1fixbug : 删除本地分支
@@ -99,9 +99,9 @@
 - 项目经理项目的代码仓库push代码 source control -> configuration -> 添加共享版本库地址
 
 ####  五.Github上托管代码
-1.使用HTTPS认证
+######1.使用HTTPS认证
 
-2.使用SSHKeys认证
+######2.使用SSHKeys认证
 - 公钥 : 存在github上用来解密
 - 私钥 : 存在本地的一个.ssh文件夹下用来加密
 git.oschina.net
