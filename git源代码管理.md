@@ -93,6 +93,8 @@
 - 公钥 : 存在github上 来解密
 - 私钥 : 存在本地的 个.ssh 件夹下 来加密
 git.oschina.net
+
 魏俊杰QQ:1846903862 
+
 https://github.com/CoderJJWei/JJKit.git   
       
