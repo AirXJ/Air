@@ -1,5 +1,5 @@
 
- ### 一.命令行的演示 
+#### 一.命令行的演示 
 1.初始化一个代码仓库
  - `git init` 
  
@@ -42,7 +42,7 @@
 9.给log起别名
 - git config --global alias.lg "log --color --graph -- pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" 
 
-### 二.共享版本库 
+#### 二.共享版本库 
 - git服务器的搭建 常繁琐(linux) 
 - 可以把代码托管到(Github/OSChina)  
 - 个 件夹 
@@ -59,7 +59,7 @@
 - git push -f :强制上传到共享版本库
 - git reset —hard HEAD^ :回到上 个版本(经理)
 
-### 三.版本备份(了解)
+#### 三.版本备份(了解)
 1.1.0版本开发完毕,将1.0版本上传到AppStore,对1.0版本进 备份(打上标签)git tag -a weibo1.0 -m "这是1.0版本"git tag
  
 2.需要将标签push到共享版本库
@@ -80,7 +80,9 @@
 - git branch -d weibo1.1fixbug : 删除本地分支
 - git branch -r -d origin/weibo1.1fixbug :删除本地版本库分支 
 - git push origin —delete weibo1.1fixbug
-### 四.新人代码仓库
+#### 四.新人代码仓库
 - 创建一个文件夹作为共享版本库项 
-- 经理项空的代码仓库push代码 source control -> configuration -> 添 加共享版本库地址五.Github上托管代码 1.使 HTTPS认证 2.使 SSHKeys认证公钥 : 存在github上 来解密私钥 : 存在本地的 个.ssh 件夹下 来加密git.oschina.net魏俊杰QQ:1846903862 https://github.com/CoderJJWei/JJKit.git   
+- 经理项空的代码仓库push代码 source control -> configuration -> 添 加共享版本库地址
+
+####  五.Github上托管代码 1.使 HTTPS认证 2.使 SSHKeys认证公钥 : 存在github上 来解密私钥 : 存在本地的 个.ssh 件夹下 来加密git.oschina.net魏俊杰QQ:1846903862 https://github.com/CoderJJWei/JJKit.git   
       
