@@ -60,7 +60,8 @@
 5.将当前的代码转为1.0标签,创建分 ,并切换到该分
  - git checkout weibo1.0 : 转为1.0标签git checkout -b weibo1.1fixbug : 创建分 ,并切换到该分                    
 6.在分 中修复bug,上传到AppStore,将修复好的版本,打上tag,并上传到共享 版本库git tag -a weibo1.1 -m “这是修复了1.0bug的1.1版本”git push origin weibo1.1 
-7.跟当前正在开发的2.0版本进 合并 source Control - > pull ->weibo1.1fixbug 
+7.跟当前正在开发的2.0版本进 合并
+ source Control - > pull ->weibo1.1fixbug 
 8.删除分支
 - git branch :查看当前在哪个分支
 - git branch -r :查看本地版本库的分 
