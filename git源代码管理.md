@@ -3,7 +3,7 @@
 1.初始化一个代码仓库
  - `git ini` 
  
-2.如果使用GIT,必须给GIT配置用户名和邮箱.给当前的git仓库配置用户名和邮箱
+2.如果使用GIT,必须给GIT配置用户名和邮箱。给当前的git仓库配置用户名和邮箱
 - git config user.name “XMG”
 - git config user.email “XMG@163.com” 
 给git配置全局的用户和邮箱git config —global user.name “XMG”git config —global user.email “XMG@163.com” 
