@@ -62,7 +62,7 @@
 #####3.删除忽略文件
 - touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C文件,文件内容全部复制下来https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 
-#####3.5
+#####3.5在本地版本库创建项目
 
 #####4.版本回退
 - git reset --hard HEAD^ :回到上一个版本(张三)
