@@ -48,11 +48,12 @@
 - 个 件夹 
 - 个U盘
 
-1. 个 件夹作为共享版本库
+1.一个文件夹作为共享版本库
 - git init —bare
+
 2.将共享版本库的所有内容下载到本地 
 - git clone 共享版本库地址
-3.删除忽略 件
+3.删除忽略文件
 - touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C,复制下来
 4.版本回退
 - git reset —hard HEAD^ :回到上一个版本(张三)
