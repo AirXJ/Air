@@ -38,7 +38,7 @@
 - git reflog : 可以查看所有版本回退的操作
 
 #####8.版本回退
-- git reset --hard HEAD : 回到当前版本
+- git reset --hard HEAD : 没有提交版本,回到当前版本
 - git reset --hard HEAD^ : 回到上一个版本 
 - git reset --hard HEAD^^ : 回到上上个版本                   
 - git reset --hard HEAD~100 :回到前100个版本
