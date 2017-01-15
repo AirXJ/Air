@@ -49,7 +49,7 @@
 - git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 ### 二.共享版本库[^多人开发，本地的代码库共享，需要共享版本库] 
-- git服务器的搭建 常繁琐(linux) 
+- git服务器的搭建非常繁琐(linux)，那本很厚的git书介绍怎么搭建
 - 可以把代码托管到(Github/OSChina)  
 - 一个文件夹 
 - 一个U盘
