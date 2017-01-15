@@ -29,7 +29,7 @@
 6.删除文件git rm person.m : 将person.m删除
 
 7.查看版本信息
-- git log - > 版本号是由sha1算法 成的40位哈希值 
+- git log - > 版本号是由sha1算法生成的40位哈希值 
 - git reflog : 可以查看所有版本回退的操作
 
 8.版本回退
