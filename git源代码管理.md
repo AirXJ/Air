@@ -81,6 +81,6 @@
 - git branch -r -d origin/weibo1.1fixbug :删除本地版本库分支 
 - git push origin —delete weibo1.1fixbug
 ### 四.新人代码仓库
-- 创建一个 件夹作为共享版本库项 
+- 创建一个文件夹作为共享版本库项 
 - 经理项空的代码仓库push代码 source control -> configuration -> 添 加共享版本库地址五.Github上托管代码 1.使 HTTPS认证 2.使 SSHKeys认证公钥 : 存在github上 来解密私钥 : 存在本地的 个.ssh 件夹下 来加密git.oschina.net魏俊杰QQ:1846903862 https://github.com/CoderJJWei/JJKit.git   
       
