@@ -8,7 +8,7 @@
 - git config user.name "XMG"
 - git config user.email "XMG@163.com"
 给git配置全局的用户和邮箱
-－ git config --global user.name "XMG"
+- git config --global user.name "XMG"
 - git config --global user.email "XMG@163.com"
 
 #####3.初始化项
