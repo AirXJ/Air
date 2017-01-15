@@ -48,7 +48,7 @@
 #####9.给log起别名[^了解]
 - git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-#### 二.共享版本库 
+### 二.共享版本库 
 - git服务器的搭建 常繁琐(linux) 
 - 可以把代码托管到(Github/OSChina)  
 - 个 件夹 
