@@ -38,11 +38,11 @@
 - git reflog : 可以查看所有版本回退的操作
 
 #####8.版本回退
-- git reset -—hard HEAD : 回到当前版本
-- git reset -—hard HEAD^ : 回到上一个版本 
-- git reset -—hard HEAD^^ : 回到上上个版本                   
-- git reset -—hard HEAD~100 :回到前100个版本
-- git reset -—hard 版本号(前5位)
+- git reset --hard HEAD : 回到当前版本
+- git reset --hard HEAD^ : 回到上一个版本 
+- git reset --hard HEAD^^ : 回到上上个版本                   
+- git reset --hard HEAD~100 :回到前100个版本
+- git reset --hard 版本号(前5位)
 
 #####9.给log起别名
 - git config --global alias.lg "log --color --graph -- pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" 
