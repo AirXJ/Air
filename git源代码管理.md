@@ -58,7 +58,7 @@
 #####1.一个文件夹作为共享版本库[^先cd进入到某个文件夹，在那个路径里设置共享版本库, 共享版本库没有.git]
 - git init —bare
 
-#####2.将共享版本库的所有内容下载到本地，也要cd到放代码文件夹
+#####2.将共享版本库的所有内容下载到本地，也要cd到本地代码仓库
 - git clone 共享版本库地址
 #####3.删除忽略文件
 - touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C文件,文件内容全部复制下来https://github.com/github/gitignore/blob/master/Objective-C.gitignore
