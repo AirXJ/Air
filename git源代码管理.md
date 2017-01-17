@@ -93,7 +93,7 @@
  - git checkout weibo1.0 : 转为1.0标签
  - git checkout -b weibo1.1fixbug : 创建分支,并切换到该分支
                    
-#####6.在分支中修复bug,上传到AppStore,将修复好的版本,在当前分支打上tag,并上传到共享版本库
+#####6.在分支中修复bug,上传到AppStore,将修复好的版本,在当前分支打上tag,并上传到共享版本库[^分支名和前面的tag值和这次的tag都不能重复]
 - git tag -a weibo1.1 -m "这是修复了1.0bug的1.1版本"
 - git push origin weibo1.1
 
