@@ -43,8 +43,8 @@
 - git reset --hard HEAD^ : 回到上一个版本 
 - git reset --hard HEAD^^ : 回到上上个版本                   
 - git reset --hard HEAD~100 :回到前100个版本
-- git reset --hard 版本号(哈希值一般前5位，前4位一样被雷劈)
-[^第四个第五个随便用哪个]
+- git reset --hard 版本号(哈希值一般前5位，前5位一样被雷劈)
+
 
 #####9.给log起别名[^了解]
 - git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
