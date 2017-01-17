@@ -102,7 +102,7 @@
  
 #####8.删除分支
 - git branch :查看当前在哪个分支
-- git branch -r :查看本地版本库的分支
+- git branch -r :查看本地版本库的分支,名字全
 - git branch -d weibo1.1fixbug : 删除本地分支
 - git branch -r -d origin/weibo1.1fixbug :删除本地版本库分支 
 - git push origin —delete weibo1.1fixbug
