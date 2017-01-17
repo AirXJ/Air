@@ -81,7 +81,7 @@
 - git tag -a weibo1.0 -m "这是1.0版本"  :weibo1.0标签名
 - git tag 查看版本
 
-#####2.需要将标签push到共享版本库
+#####2.需要将标签名push到共享版本库
 - git push origin weibo1.0
  
 #####3.开始2.0版本的开发
