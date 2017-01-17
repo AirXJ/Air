@@ -63,6 +63,7 @@
 - git clone 共享版本库地址
 - git push 从共享版本库下载
 - git pull 从共享版本库上传
+- git add . 添加某个文件夹下的所有内容
 #####3.删除忽略文件，在本地代码仓库里创建.gitignore文件，它跟.git文件夹平行
 - touch .gitignore —> Github ->搜索".gitignore" -> 选择*最多的->找到 Object-C文件,文件内容全部复制下来https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 
