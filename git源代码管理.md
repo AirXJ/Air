@@ -109,7 +109,8 @@
 - git push origin —delete weibo1.1fixbug :删除共享版本库分支
 
 ####四.新人代码仓库:专门给新人的版本库
-- 创建一个文件夹作为共享版本库 
+- 创建一个文件夹作为共享版本库
+- git init 
 - 项目经理项目的代码仓库push代码 source control -> configuration -> 添加共享版本库地址
 
 ####  五.Github上托管代码
