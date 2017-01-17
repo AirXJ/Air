@@ -102,7 +102,7 @@
  
 #####8.删除分支
 - git branch :查看当前在哪个分支，不知道分支全名
-- git checkout master 切换分支
+- git checkout master 切换分支,不用全名
 - git branch -r :查看本地版本库的分支,名字全，不能知道当前在哪个分支
 - git branch -d weibo1.1fixbug : 删除本地分支
 - git branch -r -d origin/weibo1.1fixbug :删除本地版本库分支 
