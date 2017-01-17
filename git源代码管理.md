@@ -71,7 +71,7 @@
 ##### 4.版本回退
 - git reset --hard HEAD^ :回到上一个版本(张三)，所有人都要同步操作回退到上一个版本
 - git push -f :强制上传到共享版本库
-- git reset —hard HEAD^ :回到上一个版本(经理)
+- git reset —hard HEAD^ :然后经理那边回到上一个版本(经理)
 
 
 #### 三.版本备份(了解)
