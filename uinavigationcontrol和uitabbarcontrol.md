@@ -1,4 +1,3 @@
-//设置tabBar上的按钮内容(tabBarItem)
-//tabBar上的按钮UITabBarButton,私有的类
-//设置导航条上的内容(navigationItem,左中右显示内容)，
-//UIBarButtonItem 描述按钮具体的内容
+>tabBar上的按钮UITabBarButton,私有的类;设置tabBar上的按钮内容(tabBarItem).
+***
+>设置导航条上的内容(navigationItem,左中右显示内容);UIBarButtonItem 描述按钮具体的内容
