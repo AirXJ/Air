@@ -1,10 +1,13 @@
 >按钮的图片状态区别，纯色一般是setbackgroundimage景图片，可以拉伸；setimage是内容图片大小不能随意拉伸.
 [^设置按钮的类型职能在初始化的时候设置]
+
 - 设置按钮的类型只能在初始化的时候设置
 ![](/assets/屏幕快照 2017-01-08 15.18.06.png)
 - 监听按钮点击事件［故事板按住control点击鼠标连接到控制器或者uiview］
 UIControlEventTouchDown touchbegin
 UIControlEventTouchUpInside touchend
+
+>UIControlStateDisabled 没有输入内容登陆按钮不可点击
 ```obj
  [button addTarget:self action:@selector(demo:) forControlEvents:UIControlEventTouchUpInside];
 
