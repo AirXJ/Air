@@ -8,7 +8,7 @@ UIControlEventTouchDown touchbegin
 UIControlEventTouchUpInside touchend
 
 >@interface UIControl : UIView
-@property(nonatomic,getter=isEnabled) BOOL enabled;   没有输入内容登陆按钮不可点击，在这个状态下的按钮内容枚举UIControlStateDisabled
+@property(nonatomic,getter=isEnabled) BOOL enabled;   没有输入内容登陆按钮不可点击，在这个状态下的按钮内容枚举UIControlStateDisabled;通常是自定义按钮的时候设置这个属性@property(nonatomic,getter=isSelected) BOOL selected; 
 
 ```obj
  [button addTarget:self action:@selector(demo:) forControlEvents:UIControlEventTouchUpInside];
