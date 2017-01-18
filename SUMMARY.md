@@ -54,6 +54,7 @@
                     * [layoutSubviews](layoutsubviews.md)
                 * [1.2 storyboard、xib](storyboard.md)
                 * [自定义Cell的优化](自定义cell的优化.md)
+    * [UINavigationControl和UITabBarControl](uinavigationcontrol和uitabbarcontrol.md)
 * [UI提高](ui提高.md)
     * [抽屉效果使用](抽屉效果使用.md)
     * [父子控制器](父子控制器.md)
