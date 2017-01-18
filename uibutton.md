@@ -1,4 +1,4 @@
->按钮的图片状态区别，纯色一般是setbackgroundimage景图片，可以拉伸；setimage是内容图片大小不能随意拉伸
+>按钮的图片状态区别，纯色一般是setbackgroundimage景图片，可以拉伸；setimage是内容图片大小不能随意拉伸.
 
 - 设置按钮的类型只能在初始化的时候设置
 ![](/assets/屏幕快照 2017-01-08 15.18.06.png)
