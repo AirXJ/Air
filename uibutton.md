@@ -7,7 +7,9 @@
 UIControlEventTouchDown touchbegin
 UIControlEventTouchUpInside touchend
 
->UIControlStateDisabled 没有输入内容登陆按钮不可点击
+>@interface UIControl : UIView
+@property(nonatomic,getter=isEnabled) BOOL enabled;   没有输入内容登陆按钮不可点击，在这个状态下的按钮内容枚举UIControlStateDisabled
+
 ```obj
  [button addTarget:self action:@selector(demo:) forControlEvents:UIControlEventTouchUpInside];
 
