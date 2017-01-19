@@ -33,7 +33,9 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 
 }
 ```
-- `initWithCoder:``- (void)awakeFromNib`
+> 从故事板、xib加载系统会自动调用
+｀- initWithCoder:`
+｀- (void)awakeFromNib`
 
 
 
