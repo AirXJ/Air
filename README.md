@@ -9,7 +9,6 @@
 ```
 外接显示器笔记本盒盖外接显示器还能工作，必须连接电源，散热不好，夏天慎用。
 option 点击Finder前往才能出现资源库
-command k 清空xcode缓存
  command m 最小化
  休眠 command option 关机键或者cotrol shift 关机键；
  command 1 2 3切换  f11切换
