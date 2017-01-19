@@ -8,17 +8,7 @@
 
 
  
-- 苹果是怎么创建UIViewController的
-```
- // 2.加载main.storyboard,创建main.storyboard描述的控制器
-// UIStoryboard专门用来加载stroyboard
-// name:storyboard名称不需要后缀
-UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-// 加载storyboard描述的控制器
-// 默认是加载箭头指向的控制器
-UIViewController *vc = [stroyboard instantiateInitialViewController];
-// UIViewController *vc = [stroyboard instantiateViewControllerWithIdentifier:@"blue"];
-```
+- 苹果是怎么创建UIViewController的：故事板，xib,手动（view全是手写或者loadview）
 
 - 底层实现
 ![](/assets/屏幕快照 2016-12-24 23.23.14.png)
@@ -33,14 +23,15 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 
 }
 ```
-> 从故事板、xib加载系统会自动调用
-｀- initWithCoder:`
-｀- (void)awakeFromNib`
+
 
 
 
  #####调用顺序,very important!
-
+ 
+> 从故事板、xib加载系统会自动调用
+｀- initWithCoder:`
+｀- (void)awakeFromNib`
 ```
 - (void)viewDidLoad {
 - (void)viewWillAppear:(BOOL)animated
