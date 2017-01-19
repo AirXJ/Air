@@ -3,7 +3,7 @@
 
  为什么创建控制器，而不是视图直接添加到UIWindow上
  
- 因为UIViewController有loadview方法，会让view重新布局，而且一个萝卜一个坑，好管理。
+ 因为UIViewController有loadview方法,可以自定义view，而且一个萝卜一个坑，好管理。
  在iOS7开始,状态栏默认交给控制器的管理，prefersStatusBarHidden
 
 
