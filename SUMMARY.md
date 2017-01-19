@@ -22,7 +22,7 @@
         * [字典数组打印中文分类](字典数组打印中文分类.md)
     * [给插件添加功能](给插件添加功能.md)
 * [基础UI](chapter1.md)
-    * [UIApplication和多控制器管理](uiapplication.md)
+    * [UIApplication](uiapplication.md)
         * [可以干什么](管理状态栏.md)
         * [UIApplicationDelegate](uiapplicationdelegate.md)
         * [UIApplicationMain](uiapplicationmain.md)
