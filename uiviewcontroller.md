@@ -31,7 +31,7 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
  2. 控制器的view加载完毕的时候调用
 
  3. 控件的初始化,数据的初始化(懒加载)
-- `initWithCoder:``- (void)awakeFromNib`
+
  */
 
 - (void)loadView{
@@ -42,6 +42,7 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 
 }
 ```
+- `initWithCoder:``- (void)awakeFromNib`
 
 
 
