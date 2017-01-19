@@ -29,7 +29,6 @@
         * [代码创建控件](代码创建控件.md)
         * [initialize和load方法](多控制器管理第一天.md)
     * [多控制器管理](多控制器管理.md)
-        * 啊啊啊啊
         * [UIWindow](uiwindow.md)
         * [xib](xib.md)
         * [UIStoryBoard](uistoryboard.md)
