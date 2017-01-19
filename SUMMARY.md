@@ -25,7 +25,6 @@
         * [可以干什么](管理状态栏.md)
         * [UIApplicationDelegate](uiapplicationdelegate.md)
         * [UIApplicationMain](uiapplicationmain.md)
-        * [UIStoryBoard](uistoryboard.md)
         * [xib](xib.md)
         * [代码创建控件](代码创建控件.md)
         * [info.plist文件](infoplist文件.md)
@@ -33,6 +32,7 @@
     * [多控制器管理](多控制器管理.md)
         * 啊啊啊啊
         * [UIWindow](uiwindow.md)
+        * [UIStoryBoard](uistoryboard.md)
         * [UIViewController](uiviewcontroller.md)
     * [UIView的事件传递与循环](uiview的事件传递.md)
         * [UIRespond](uirespond.md)
