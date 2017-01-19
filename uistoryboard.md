@@ -5,7 +5,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // 2.加载main.storyboard,创建main.storyboard描述的控制器
     // UIStoryboard专门用来加载stroyboard
-    // name:storyboard名称不需要后缀
+    // name:storyboard文件名称不需要后缀
     UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     // 加载storyboard描述的控制器
     // 默认是加载箭头指向的控制器
