@@ -24,18 +24,9 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 ![](/assets/屏幕快照 2016-12-24 23.23.14.png)
 
 ```
-/**
-
- 1. 系统调用
-
- 2. 控制器的view加载完毕的时候调用
-
- 3. 控件的初始化,数据的初始化(懒加载)
-
- */
-
+//这个方法是系统自动调用的，除非你要自己定义view
 - (void)loadView{
-懒加载
+//懒加载，不要在里面写get方法，会屎人的
  [super loadView];
 
  NSLog(@"%s", __func__);
