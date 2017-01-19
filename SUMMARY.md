@@ -9,6 +9,7 @@
 * [OC与 Xcode](oc.md)
     * [继承](继承.md)
     * [运算符](运算符.md)
+    * [info.plist文件](infoplist文件.md)
     * [pch文件](pch文件.md)
     * [\#if、\#ifdef、\#if define区别](if、ifdef、if-define区别.md)
     * [自动提示宏](自动提示宏.md)
@@ -26,7 +27,6 @@
         * [UIApplicationDelegate](uiapplicationdelegate.md)
         * [UIApplicationMain](uiapplicationmain.md)
         * [代码创建控件](代码创建控件.md)
-        * [info.plist文件](infoplist文件.md)
         * [initialize和load方法](多控制器管理第一天.md)
     * [多控制器管理](多控制器管理.md)
         * 啊啊啊啊
