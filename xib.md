@@ -17,7 +17,7 @@ NIB其实是一个文件夹，里面有可执行的二进制文件
   - 3. xib中的view要跟控制器关联，告诉xib描述的是哪一个view，连线
 
 ```
-//nib是xib或storyboard经过编译后的的文件名，不是放在mainbundle的xib不会编译，一般都是放图片到bundle里，懒加载，一定要绑定控制器
+//nib是xib或storyboard经过编译后的的文件名，不是放在mainbundle文件夹里的xib不会编译，一般都是放图片到bundle里，懒加载，一定要绑定控制器
 ViewController *vc = [[ViewController alloc] initWithNibName:@"VC" bundle:nil];
 ```
 
