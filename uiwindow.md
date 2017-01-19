@@ -1,4 +1,5 @@
 # 04-UIWindow
+
 [^用了LaunchImage,如果图片小了那么启动之后的窗口的可视范围就会根启动图片一样大，就可能出现上下是黑的情况]
 
 一.`什么时候创建`
@@ -41,24 +42,24 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
-
 ```
 
-- `小提示`
+* `小提示`
 
- 为什么创建控制器，而不是视图直接添加到UIWindow上
- 
- 因为UIViewController有loadview方法，会让view重新布局，而且一个萝卜一个坑，好管理。
- 
-四.`窗口补充`
+  为什么创建控制器，而不是视图直接添加到UIWindow上
+
+  因为UIViewController有loadview方法，会让view重新布局，而且一个萝卜一个坑，好管理。
+
+四.`窗口补充[^iOS9之后, 如果一个应用程序手动添加多个窗口,控制器会把它的状态栏隐藏]
 
 1.应用程序中那些控件属于窗口,1.状态栏 2.键盘
 
-2.窗口层级关系，可以做加减，同级看调用先后。
-UIWindowLevelAlert > UIWindowLevelStatusBar > UIWindowLevelNormal
+2.窗口层级关系，可以做加减，同级看调用先后。  
+UIWindowLevelAlert &gt; UIWindowLevelStatusBar &gt; UIWindowLevelNormal
 
 `设置窗口的层级,层级谁大就显示在最外面`
 
 3.UITextField显示键盘
 
 注意点:`如果一个键盘想要弹出来,必须把textField添加到一个控件上.`
+
