@@ -20,7 +20,7 @@ UIViewController *vc = [stroyboard instantiateInitialViewController];
 // UIViewController *vc = [stroyboard instantiateViewControllerWithIdentifier:@"blue"];
 ```
 
-- 底层实现:判断下有没有指定storyboard,如果有,就会帮你创建storyboard描述的控制器的view,如果没有,创建一个空的view
+- 底层实现
 ![](/assets/屏幕快照 2016-12-24 23.23.14.png)
 
 ```
