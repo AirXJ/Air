@@ -40,5 +40,5 @@
     LaunchScreen好处:1.自动识别当前真机或者模拟器的尺寸 2.只要让美工提供一个可拉伸图片
     3.展示更多东西
  
-    LaunchScreen底层实现:把LaunchScreen截屏,生成一张图片.作为启动界面
+    LaunchScreen底层实现:把LaunchScreen截屏,生成一张图片.作为启动界面，然后这张图的大小决定了以后主窗口的可视范围。
 
