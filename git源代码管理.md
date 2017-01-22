@@ -144,7 +144,7 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 
 #### 五.Github上托管代码
 (1) 在终端中先进入该目录：
-cd ~/Documents/Projects/ProjectA
+cd ~/Documents/Projects/ProjectA : 将文件直接拖入终端就会显示路径目录了
 (2) 在该目录初始化Git仓库：
 git init
 git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）  
