@@ -154,7 +154,7 @@ xcode使用Github，
 ##### 2.使用SSHKeys认证
 
 * 公钥 : 存在github上用来解密
-* 私钥 : 存在本地的一个.ssh文件夹下用来加密
+* 私钥 : 存在本地的一个.ssh文件夹下用来加密，通过终端配置的
 
 git.oschina.net
 
