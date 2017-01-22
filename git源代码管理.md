@@ -143,10 +143,14 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 * git clone 新人共享版本库地址
 
 #### 五.Github上托管代码
+(1) 在终端中先进入该目录：
+cd ~/Documents/Projects/ProjectA
+(2) 在该目录初始化Git仓库：
+git init
 git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）  
 git pull -u origin master : 先把项目里的文件下载下来
 再将已经存在的项目拷贝进去
-git add .
+git add . :这一步之前一定要将远程代码仓库里的.gitignore文件拷贝下来
 git push origin master
 
 Github创建代码仓库  
