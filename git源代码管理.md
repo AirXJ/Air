@@ -147,6 +147,7 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 cd ~/Documents/Projects/ProjectA : 将文件直接拖入终端就会显示路径目录了
 (2) 在该目录初始化Git仓库：
 git init
+(3) 连接远程代码仓库
 git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）  
 git pull -u origin master : 先把项目里的文件下载下来
 再将已经存在的项目拷贝进去
