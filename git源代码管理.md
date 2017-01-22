@@ -154,7 +154,7 @@ git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）
 (5)xcode添加Github帐号  
 ![](/assets/屏幕快照 2560-01-22 13.32.06.png)  
 (6) 初始化忽略文件  
-git pull -u origin master : 先把项目里的文件下载下来
+git pull origin master : 先把项目里的文件下载下来
 (7) 再将已经存在的项目拷贝进去
 git add . :这一步之前一定要将远程代码仓库里的.gitignore文件拷贝下来
 (8)
