@@ -144,8 +144,10 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 
 #### 五.Github上托管代码
 git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）  
-git pull origin master
-gitpushoriginmaster
+git pull origin master : 先把项目里的文件下载下来
+再将已经存在的项目拷贝进去
+git add .
+git pushoriginmaster
 
 Github创建代码仓库  
 ![](/assets/屏幕快照 2560-01-22 13.34.04.png)  
