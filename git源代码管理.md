@@ -143,12 +143,16 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 * git clone 新人共享版本库地址
 
 #### 五.Github上托管代码
-Github创建代码仓库
-![](/assets/屏幕快照 2560-01-22 13.34.04.png)
-xcode使用Github，
-![](/assets/屏幕快照 2560-01-22 13.32.06.png)
-通过xcode将代码仓库下载checkout到本地
+git pull origin master
+gitpushoriginmaster
+
+Github创建代码仓库  
+![](/assets/屏幕快照 2560-01-22 13.34.04.png)  
+xcode使用Github，  
+![](/assets/屏幕快照 2560-01-22 13.32.06.png)  
+通过xcode将代码仓库下载checkout到本地  
 ![](/assets/屏幕快照 2560-01-22 13.32.43.png)
+
 ##### 1.使用HTTPS认证
 
 ##### 2.使用SSHKeys认证
