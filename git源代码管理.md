@@ -147,17 +147,21 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 cd ~/Documents/Projects/ProjectA : 将文件直接拖入终端就会显示路径目录了
 (2) 在该目录初始化Git仓库：
 git init
-(3) 连接远程代码仓库
-git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）  
-git pull -u origin master : 先把项目里的文件下载下来
-再将已经存在的项目拷贝进去
-git add . :这一步之前一定要将远程代码仓库里的.gitignore文件拷贝下来
-git push origin master
-
-Github创建代码仓库  
-![](/assets/屏幕快照 2560-01-22 13.34.04.png)  
-xcode使用Github，  
+(3) Github创建代码仓库
+![](/assets/屏幕快照 2560-01-22 13.34.04.png)
+(4) 连接远程代码仓库
+git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）
+(5)xcode添加Github帐号  
 ![](/assets/屏幕快照 2560-01-22 13.32.06.png)  
+(6) 初始化忽略文件  
+git pull -u origin master : 先把项目里的文件下载下来
+(7) 再将已经存在的项目拷贝进去
+git add . :这一步之前一定要将远程代码仓库里的.gitignore文件拷贝下来
+(8)
+git push -u origin master
+
+
+
 通过xcode将代码仓库下载checkout到本地  
 ![](/assets/屏幕快照 2560-01-22 13.32.43.png)
 
