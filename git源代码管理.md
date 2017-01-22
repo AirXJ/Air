@@ -143,6 +143,7 @@ source Control - &gt; pull -&gt;weibo1.1fixbug
 * git clone 新人共享版本库地址
 
 #### 五.Github上托管代码
+git remote add origin https://github.com/xixaoje/BuDeJie.git（项目地址）  
 git pull origin master
 gitpushoriginmaster
 
