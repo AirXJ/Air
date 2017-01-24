@@ -41,6 +41,7 @@
 - viewWillDisappear
 //清空缓存，图片缓存。调用Unload方法，判断view有没有显示
 -(void)didReceiveMemoryWarning
+MRC下
 //控制器view没有显示的时候会调用
 - viewWillUnload
 //清空没必要的数据
