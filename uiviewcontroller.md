@@ -37,7 +37,9 @@
 - (void)viewWillAppear:(BOOL)animated
 - (void)viewWillLayoutSubviews
 - (void)drawRect:(CGRect)rect 
-- (void)viewDidAppear:(BOOL)animated{
+- (void)viewDidAppear:(BOOL)animated
+- viewWillDisappear
+- viewWillUnload
 ```
 
 
@@ -49,12 +51,6 @@
 3. 去除一些不必要的内存,去除耗时的内存
 
 ```
+//清空缓存，图片
 -(void)didReceiveMemoryWarning {
-
-  [super didReceiveMemoryWarning\];
-
-
-
-}
 ```
-
