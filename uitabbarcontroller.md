@@ -3,3 +3,6 @@
 addChildViewController
 
 [^UITabBar 49]
+
+UITabBarButton
+tabBarItem
