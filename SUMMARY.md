@@ -42,6 +42,7 @@
         * [手势](手势.md)
     * [UIView+StoryBoard](第一天.md)
         * [frame和size](frame和size.md)
+        * [项目中常见的文件\(LaunchScreen\) LaunchScreen](项目中常见的文件launchscreen-launchscreen.md)
     * [UILabel](uilabel.md)
     * [UIImageView](uiimageview.md)
         * [动画](动画.md)
