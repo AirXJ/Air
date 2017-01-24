@@ -39,18 +39,8 @@
 - (void)drawRect:(CGRect)rect 
 - (void)viewDidAppear:(BOOL)animated
 - viewWillDisappear
+//清空缓存，图片缓存。调用Unload方法，判断view有没有显示
+-(void)didReceiveMemoryWarning
+//控制器view没有显示的时候会调用
 - viewWillUnload
-```
-
-
-
-
-
-1. 系统调用
-2. 当控制器接收到内存警告调用
-3. 去除一些不必要的内存,去除耗时的内存
-
-```
-//清空缓存，图片缓存
--(void)didReceiveMemoryWarning {
 ```
