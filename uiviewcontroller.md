@@ -43,4 +43,6 @@
 -(void)didReceiveMemoryWarning
 //控制器view没有显示的时候会调用
 - viewWillUnload
+//清空没必要的数据
+－ viewDidUnload
 ```
