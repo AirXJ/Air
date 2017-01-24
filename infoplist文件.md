@@ -1,4 +1,4 @@
-常见属性
+### 常见属性
 Localiztion native development region(CFBundleDevelopmentRegion)-本地化相关
 
 Bundle display name(CFBundleDisplayName)-程序安装后显示的名称,限制在10－12个字符，如果超出，将被显示缩写名称
@@ -11,7 +11,7 @@ Main storyboard file base name(NSMainStoryboardFile)-主storyboard文件的名�
 
 Bundle identifier(CFBundleIdentifier)-项目的唯一标识，部署到真机时用到
 
-02-项目中常见的文件(info.plist)
+### 02-项目中常见的文件(info.plist)
 Supporting file一般都是放些资源文件,像一些plist这些等.
 xcode5当中也有info.plist,只不过它的名字很长.是工程的名称.
 在xcode5当中,会自动生成一个pch文件,在Xcode6当中不会帮我们生成PCH文件.
