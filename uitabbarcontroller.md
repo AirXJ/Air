@@ -4,5 +4,6 @@ addChildViewController
 
 [^UITabBar 49]
 
-UITabBarButton
+#### UITabBarButton
+[^内部私有的类，在willappear的时候添加]
 tabBarItem
