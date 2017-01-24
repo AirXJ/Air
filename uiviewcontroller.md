@@ -35,6 +35,7 @@
 ```
 - (void)viewDidLoad {
 - (void)viewWillAppear:(BOOL)animated
+- (void)viewWillLayoutSubviews
 - (void)drawRect:(CGRect)rect 
 - (void)viewDidAppear:(BOOL)animated{
 ```
