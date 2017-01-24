@@ -68,6 +68,7 @@
         * [抽屉效果使用](抽屉效果使用.md)
         * [父子控制器](父子控制器.md)
         * [导航控制器](导航控制器.md)
+        * [UITabBarController](uitabbarcontroller.md)
     * [渐变动画](渐变动画.md)
         * [transform](transform.md)
     * [Quartz2D](quartz2d.md)
