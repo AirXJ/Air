@@ -63,15 +63,5 @@ UIWindowLevelAlert &gt; UIWindowLevelStatusBar &gt; UIWindowLevelNormal
 3.UITextField显示键盘
 
 注意点:`如果一个键盘想要弹出来,必须把textField添加到一个控件上.`
-
-
-
-
-1.让窗口成为显示状态.
-窗口默认是隐藏的.hidden = yes.
-底层做的事件就是:
-self.window.hidden = NO;
-2.把当前窗口设置成应用程序的主窗口
-application.keyWindow获得应用程序的主窗口.
 在程序当中,状态栏和键盘,它都属性是一个窗口.可以通过打印的方式来验证.
 
