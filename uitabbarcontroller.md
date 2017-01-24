@@ -6,4 +6,4 @@ addChildViewController
 
 #### UITabBarButton
 [^内部私有的类，在控制器的willappear方法调用的时候系统自动添加]
-tabBarItem
+tabBarItem:模型累
