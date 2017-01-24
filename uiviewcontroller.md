@@ -33,7 +33,7 @@
 > - (void)viewWillAppear:(BOOL)animated
 > - (void)viewWillLayoutSubviews
 > - (void)drawRect:(CGRect)rect 
-> - (void)viewDidAppear:(BOOL)animated 这里屏幕打印尺寸准
+> - (void)viewDidAppear:(BOOL)animated 这里打印屏幕尺寸准
 > - viewWillDisappear
 > //清空缓存，图片缓存。调用Unload方法，判断view有没有显示
 > -(void)didReceiveMemoryWarning
