@@ -59,6 +59,7 @@
     * [多控制器管理](多控制器管理.md)
         * 啊啊啊啊
 * [UI提高](ui提高.md)
+    * [NSAttributedString描述](at.md)
     * [多控制器管理](多控制器管理.md)
         * [UIWindow](uiwindow.md)
         * [UIScreen](uiscreen.md)
@@ -69,7 +70,6 @@
         * [抽屉效果使用](抽屉效果使用.md)
         * [父子控制器](父子控制器.md)
         * [导航控制器](导航控制器.md)
-    * [NSAttributedString描述](at.md)
     * [渐变动画](渐变动画.md)
         * [transform](transform.md)
     * [Quartz2D](quartz2d.md)
