@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [学习资源](资源地质.md)
 * [单词积累](单词积累.md)
-* [自己犯过的错误](自己犯过的错误.md)
+* [犯错总结](自己犯过的错误.md)
 * [Xcode配置](xcode配置.md)
 * [xcode调试技巧](xcode调试技巧.md)
 * [OC与 Xcode](oc.md)
