@@ -104,7 +104,7 @@
         * [核心动画代理](核心动画代理.md)
 * [UI补充](ui补充.md)
   * [Stack View](stack-view.md)
-* [网络](网络.md)
+* [多线程](网络.md)
 * [Json序列化](json序列化.md)
 * [源代码管理和终端命令](源代码管理.md)
   * [GIT源代码管理](git源代码管理.md)
@@ -133,5 +133,4 @@
 * [xcode调试技巧](xcode调试技巧.md)
 * [Xcode配置](xcode配置.md)
 * [C语言](c.md)
-* [多线程](.md)
 
