@@ -20,3 +20,7 @@ __runtime Xcode调试,结局方法中不带有参数__
 ***
 
 po 调试打印内存对象
+
+#### 出现错误没报原因，设置僵尸模式
+Xcode工具条 Product Scheme Edit Scheme
+![](/assets/屏幕快照 2560-02-03 15.15.24.png)
