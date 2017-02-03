@@ -24,3 +24,28 @@ code ...
 code ...
 #endif 
 ```
+
+### #if可以控制代码的执行与否
+```
+#if __has_feature(objc_arc)
+//条件满足 ARC
+#else
+// MRC
+-(oneway void)release
+{
+    
+}
+
+-(instancetype)retain
+{
+    return _instance;
+}
+
+//习惯
+-(NSUInteger)retainCount
+{
+    return MAXFLOAT;
+}
+#endif
+
+```
