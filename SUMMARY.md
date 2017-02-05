@@ -22,6 +22,7 @@
   * [分类](分类.md)
     * [字典数组打印中文分类](字典数组打印中文分类.md)
   * [给插件添加功能](给插件添加功能.md)
+  * [block](block.md)
 * [runtime](run-time.md)
   * [runtime消息机制](runtime消息机制.md)
   * [runtime交换方法](runtime交换方法.md)
