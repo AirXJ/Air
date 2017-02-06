@@ -41,7 +41,7 @@ Libdispatch版本源码：http://www.opensource.apple.com/source/libdispatch/lib
 ```
 01 在类的内部提供一个static修饰的全局变量
 02 提供一个类方法，方便外界访问
-03 重写+allocWithZone方法，保证永远都只为单例对象分配一次内存空间
+03 重写+allocWithZone方法（重写alloc方法，系统最后还是调用allocWithZone方法），保证永远都只为单例对象分配一次内存空间
 04 严谨起见，重写-copyWithZone方法和-MutableCopyWithZone方法
 ```
 
