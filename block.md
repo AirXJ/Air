@@ -39,3 +39,4 @@ block应用:在一个类中定义,在另外一个类中调用
 return 一个block：直接return block变量名就行。
 调用block ^{
            }();可以这样写，很拉风。
+           或者block(参数名);
