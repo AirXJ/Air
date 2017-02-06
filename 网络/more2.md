@@ -1,9 +1,10 @@
 # 第二天
 
-###0.补充
+### 0.补充
+
 ```objc
 使用Crearte函数创建的并发队列和全局并发队列的主要区别：
-1.全局并发队列在整个应用程序中本身是默认存在的，并且对应有高优先级、默认优先级、低优先级和后台优先级一共四个并发队列，我们只是选择其中的一个直接拿来用。而Crearte函数是实打实的从头开始去创建一个队列。
+1.全局并发队列在整个应用程序中本身是默认存在的，并且对应有高优先级、默认优先级、低优先级和后台优先级一共四种并发队列，我们只是选择其中的一个直接拿来用。而Crearte函数是实打实的从头开始去创建一个队列。
 2.在iOS6.0之前，在GCD中凡是使用了带Create和retain的函数在最后都需要做一次release操作。而主队列和全局并发队列不需要我们手动release。当然了，在iOS6.0之后GCD已经被纳入到了ARC的内存管理范畴中，即便是使用retain或者create函数创建的对象也不再需要开发人员手动释放，我们像对待普通OC对象一样对待GCD就OK。
 3.在使用栅栏函数的时候，苹果官方明确规定栅栏函数只有在和使用create函数自己的创建的并发队列一起使用的时候才有效（没有给出具体原因）
 4.其它区别涉及到XNU内核的系统级线程编程，不一一列举。
@@ -13,24 +14,33 @@ GCDAPI:https://developer.apple.com/library/ios/documentation/Performance/Referen
 
 Libdispatch版本源码：http://www.opensource.apple.com/source/libdispatch/libdispatch-187.5/
 ```
-###1.单例模式
-- 1.1 概念相关
+
+### 1.单例模式
+
+* 1.1 概念相关
 
 （1）单例模式
 
-    在程序运行过程，一个类只有一个实例
+```
+在程序运行过程，一个类只有一个实例
+```
+
 （2）使用场合
 
-    在整个应用程序中，共享一份资源（这份资源只需要创建初始化1次）
+```
+在整个应用程序中，共享一份资源（这份资源只需要创建初始化1次）
+```
 
-- 1.2 ARC实现单例
+* 1.2 ARC实现单例
 
 （1）步骤
 
-    01 在类的内部提供一个static修饰的全局变量
-    02 提供一个类方法，方便外界访问
-    03 重写+allocWithZone方法，保证永远都只为单例对象分配一次内存空间
-    04 严谨起见，重写-copyWithZone方法和-MutableCopyWithZone方法
+```
+01 在类的内部提供一个static修饰的全局变量
+02 提供一个类方法，方便外界访问
+03 重写+allocWithZone方法，保证永远都只为单例对象分配一次内存空间
+04 严谨起见，重写-copyWithZone方法和-MutableCopyWithZone方法
+```
 
 （2）相关代码
 
@@ -78,26 +88,31 @@ static XMGTools *_instance;
 {
     return _instance;
 }
-
 ```
-- 1.3 MRC实现单例
+
+* 1.3 MRC实现单例
 
 （1）实现步骤
 
-    01 在类的内部提供一个static修饰的全局变量
-    02 提供一个类方法，方便外界访问
-    03 重写+allocWithZone方法，保证永远都只为单例对象分配一次内存空间
-    04 严谨起见，重写-copyWithZone方法和-MutableCopyWithZone方法
-    05 重写release方法
-    06 重写retain方法
-    07 建议在retainCount方法中返回一个最大值
+```
+01 在类的内部提供一个static修饰的全局变量
+02 提供一个类方法，方便外界访问
+03 重写+allocWithZone方法，保证永远都只为单例对象分配一次内存空间
+04 严谨起见，重写-copyWithZone方法和-MutableCopyWithZone方法
+05 重写release方法
+06 重写retain方法
+07 建议在retainCount方法中返回一个最大值
+```
 
 （2）配置MRC环境知识
 
-    01 注意ARC不是垃圾回收机制，是编译器特性
-    02 配置MRC环境：build setting ->搜索automatic ref->修改为NO
+```
+01 注意ARC不是垃圾回收机制，是编译器特性
+02 配置MRC环境：build setting ->搜索automatic ref->修改为NO
+```
 
 （3）相关代码
+
 ```objc
 //提供一个static修饰的全局变量，强引用着已经实例化的单例对象实例
 static XMGTools *_instance;
@@ -156,15 +171,18 @@ static XMGTools *_instance;
 {
     return MAXFLOAT;
 }
-
 ```
-- 1.4 通用版本
+
+* 1.4 通用版本
 
 （1）有意思的对话
 
-    01 问:写一份单例代码在ARC和MRC环境下都适用？
-    答：可以使用条件编译来判断当前项目环境是ARC还是MRC
-    02 问:条件编译的代码呢，么么哒？
+```
+01 问:写一份单例代码在ARC和MRC环境下都适用？
+答：可以使用条件编译来判断当前项目环境是ARC还是MRC
+02 问:条件编译的代码呢，么么哒？
+```
+
 ```objc
 //答：条件编译
 #if __has_feature(objc_arc)
@@ -173,32 +191,42 @@ static XMGTools *_instance;
 //如果不是ARC，那么就执行代理的代码2
 #endif
 ```
-    03 问：在项目里面往往需要实现很多的单例，比如下载、网络请求、音乐播放等等，弱弱的问一句单例可以用继承吗？
-    答：单例是不可以用继承的，如果想一次写就，四处使用，那么推荐亲使用带参数的宏定义啦！
-    04 问：宏定义怎么弄？
-    答：这个嘛~~回头看一眼我的代码咯，亲。
+
+```
+03 问：在项目里面往往需要实现很多的单例，比如下载、网络请求、音乐播放等等，弱弱的问一句单例可以用继承吗？
+答：单例是不可以用继承的，如果想一次写就，四处使用，那么推荐亲使用带参数的宏定义啦！
+04 问：宏定义怎么弄？
+答：这个嘛~~回头看一眼我的代码咯，亲。
+```
 
 （2）使用带参数的宏完成通用版单例模式代码
 
-    01 注意条件编译的代码不能包含在宏定义里面
-    02 宏定义的代码只需要写一次就好，之后直接拖到项目中用就OK
+```
+01 注意条件编译的代码不能包含在宏定义里面
+02 宏定义的代码只需要写一次就好，之后直接拖到项目中用就OK
+```
 
+### 2.NSOperation
 
-###2.NSOperation
-- 2.1 NSOperation基本使用
+* 2.1 NSOperation基本使用
 
 （1）相关概念
 
-    01 NSOperation是对GCD的包装
-    02 两个核心概念【队列+操作】
+```
+01 NSOperation是对GCD的包装
+02 两个核心概念【队列+操作】
+```
 
 （2）基本使用
 
-    01 NSOperation本身是抽象类，只能只有它的子类
-    02 三个子类分别是：NSBlockOperation、NSInvocationOperation以及自定义继承自NSOperation的类
-    03 NSOperation和NSOperationQueue结合使用实现多线程并发
+```
+01 NSOperation本身是抽象类，只能只有它的子类
+02 三个子类分别是：NSBlockOperation、NSInvocationOperation以及自定义继承自NSOperation的类
+03 NSOperation和NSOperationQueue结合使用实现多线程并发
+```
 
 （3）相关代码
+
 ```objc
 //  01 NSInvocationOperation
     //1.封装操作
@@ -251,13 +279,18 @@ static XMGTools *_instance;
     //2.执行操作
     [op start];
 ```
-- 2.2 NSOperationQueue基本使用
+
+* 2.2 NSOperationQueue基本使用
 
 （1）NSOperation中的两种队列
 
-    01 主队列 通过mainQueue获得，凡是放到主队列中的任务都将在主线程执行
-    02 非主队列 直接alloc init出来的队列。非主队列同时具备了并发和串行的功能，通过设置最大并发数属性来控制任务是并发执行还是串行执行
+```
+01 主队列 通过mainQueue获得，凡是放到主队列中的任务都将在主线程执行
+02 非主队列 直接alloc init出来的队列。非主队列同时具备了并发和串行的功能，通过设置最大并发数属性来控制任务是并发执行还是串行执行
+```
+
 （2）相关代码
+
 ```objc
 //自定义NSOperation
 -(void)customOperation
@@ -342,11 +375,12 @@ static XMGTools *_instance;
     [queue addOperation:op2];
     [queue addOperation:op3];
 }
-
 ```
-- 2.3 NSOperation其它用法
+
+* 2.3 NSOperation其它用法
 
 （1）设置最大并发数【控制任务并发和串行】
+
 ```objc
 //1.创建队列
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
@@ -360,6 +394,7 @@ static XMGTools *_instance;
 ```
 
 （2）暂停和恢复以及取消
+
 ```objc
     //设置暂停和恢复
     //suspended设置为YES表示暂停，suspended设置为NO表示恢复
@@ -400,9 +435,10 @@ static XMGTools *_instance;
 }
 ```
 
-- 2.4 NSOperation实现线程间通信
+* 2.4 NSOperation实现线程间通信
 
 （1）开子线程下载图片
+
 ```objc
  //1.创建队列
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
@@ -422,9 +458,10 @@ static XMGTools *_instance;
             NSLog(@"刷新UI操作---%@",[NSThread currentThread]);
         }];
     }];
-
 ```
+
 （2）下载多张图片合成综合案例（设置操作依赖）
+
 ```objc
 //02 综合案例
 - (void)download2
@@ -490,20 +527,25 @@ static XMGTools *_instance;
     [queue addOperation:combine];
     }
 ```
-###3.多图下载综合示例程序
+
+### 3.多图下载综合示例程序
+
 （1）涉及知识点
 
-         01 字典转模型
-         02 存储数据到沙盒，从沙盒中加载数据
-         03 占位图片的设置（cell的刷新问题）
-         04 如何进行内存缓存（使用NSDictionary）
-         05 在程序开发过程中的一些容错处理
-         06 如何刷新tableView的指定行（解决数据错乱问题）
-         07 NSOperation以及线程间通信相关知识
+```
+     01 字典转模型
+     02 存储数据到沙盒，从沙盒中加载数据
+     03 占位图片的设置（cell的刷新问题）
+     04 如何进行内存缓存（使用NSDictionary）
+     05 在程序开发过程中的一些容错处理
+     06 如何刷新tableView的指定行（解决数据错乱问题）
+     07 NSOperation以及线程间通信相关知识
+```
 
-###4.第三方框架
+### 4.第三方框架
 
 （1）SDWebImage基本使用
+
 ```objc
     01 设置imageView的图片
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:app.icon] placeholderImage:[UIImage imageNamed:@"placehoder"]];
@@ -555,8 +597,8 @@ static XMGTools *_instance;
 
     06 如何判断当前图片类型
     + (NSString *)sd_contentTypeForImageData:(NSData *)data;
-
-
 ```
-（2）SDWebImage内部结构
+
+（2）SDWebImage内部结构  
 ![](/assets/1.png)
+
