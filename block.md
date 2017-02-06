@@ -34,3 +34,8 @@ block应用:在一个类中定义,在另外一个类中调用
         只要block引用外部局部变量,block放在堆里面
         block使用strong.最好不要使用copy
 ```
+
+### block使用语法
+return 一个block：直接return block变量名就行。
+调用block ^{
+           }();可以这样写，很拉风。
