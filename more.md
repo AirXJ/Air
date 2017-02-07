@@ -442,8 +442,10 @@ typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
 				【400】：客户端请求的语法错误，服务器无法解析
 				【404】：无法找到资源
 				【500】：服务器内部错误，无法完成请求
-```
+
+
 #### 笔记补充
+
 
  ```
  1.SDWebImage相关知识点补充
