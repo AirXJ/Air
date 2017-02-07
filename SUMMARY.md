@@ -107,7 +107,7 @@
   * [Stack View](stack-view.md)
 * [多线程第一天](网络.md)
 * [多线程第二天](网络/more2.md)
-* [more](more.md)
+* [多线程第三天](more.md)
 * [Json序列化](json序列化.md)
 * [源代码管理和终端命令](源代码管理.md)
   * [GIT源代码管理](git源代码管理.md)
@@ -136,4 +136,5 @@
 * [xcode调试技巧](xcode调试技巧.md)
 * [Xcode配置](xcode配置.md)
 * [C语言](c.md)
+* [more](more.md)
 
