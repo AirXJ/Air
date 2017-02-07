@@ -8,7 +8,7 @@
 类前缀
 
 ### tcp链接接收方缓冲区过小处理过程
-在xcode菜单栏的product的schema编辑里
+在xcode菜单栏的product的scheme编辑里
 ![](/assets/20161129204530782.png)
 ```
 1.选择 Product –>Scheme–>Edit Scheme 
