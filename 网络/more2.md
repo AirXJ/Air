@@ -18,7 +18,7 @@ GCDAPI:https://developer.apple.com/library/ios/documentation/Performance/Referen
 Libdispatch版本源码：http://www.opensource.apple.com/source/libdispatch/libdispatch-187.5/
 ```
 
-### 1.单例模式
+###单例模式
 
 * 1.1 概念相关
 
@@ -210,7 +210,7 @@ static XMGTools *_instance;
 02 宏定义的代码只需要写一次就好，之后直接拖到项目中用就OK
 ```
 
-### 2.NSOperation
+###NSOperation
 > 01 NSOperation本身是抽象类，是对GCD的包装，作用调度任务；只能由它的子类封装任务，必须和NSOperationQueue(并发)结合使用实现多线程并发
   02 三个子类分别是：NSBlockOperation、NSInvocationOperation以及自定义继承自NSOperation的类内部重写main方法封装任务
 
@@ -269,7 +269,7 @@ static XMGTools *_instance;
     [op start];
 ```
 
-* 2.2 NSOperationQueue基本使用
+###  NSOperationQueue基本使用
 
 （1）NSOperation中的两种队列
 
