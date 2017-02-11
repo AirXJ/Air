@@ -26,26 +26,5 @@
 					  }
 	}];
 }
-- (void)outputAccelertionData:(CMAcceleration)acceleration{
-	UIInterfaceOrientation orientationNew;
-	if (acceleration.x >= 0.75) {
-		orientationNew = UIInterfaceOrientationLandscapeLeft;
-	}
-	else if (acceleration.x <= -0.75) {
-		orientationNew = UIInterfaceOrientationLandscapeRight;
-	}
-	else if (acceleration.y <= -0.75) {
-		orientationNew = UIInterfaceOrientationPortrait;
-	}
-	else if (acceleration.y >= 0.75) {
-		orientationNew = UIInterfaceOrientationPortraitUpsideDown;
-	}
-	else {
-		// Consider same as last time
-		return;
-	}
-	if (orientationNew == orientationLast)
-		return;
-	orientationLast = orientationNew;
-}
+
 ```
