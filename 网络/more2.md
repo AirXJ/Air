@@ -211,8 +211,8 @@ static XMGTools *_instance;
 ```
 
 ### 2.NSOperation
-> 01 NSOperation本身是抽象类，只能只有它的子类
-  02 三个子类分别是：NSBlockOperation、NSInvocationOperation以及自定义继承自NSOperation的类
+> 01 NSOperation本身是抽象类，是对GCD的包装；，只能由它的子类封装任务
+  02 三个子类分别是：NSBlockOperation、NSInvocationOperation以及自定义继承自NSOperation的类内部重写main方法封装任务
   03 NSOperation和NSOperationQueue结合使用实现多线程并发
 
 * 2.1 NSOperation基本使用
@@ -220,7 +220,7 @@ static XMGTools *_instance;
 （1）相关概念
 
 ```
-01 NSOperation是对GCD的包装
+01 
 02 两个核心概念【队列+操作】
 ```
 
