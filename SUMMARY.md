@@ -135,9 +135,9 @@
 * [C语言](c.md)
 * [more](more.md)
 * [Thread](thread.md)
-  * [多线程第一天](网络.md)
+  * [GCD](网络.md)
   * [NSOperation｜单例模式](网络/more2.md)
-  * [SDWebImage｜Runloop](more.md)
+  * [Runloop](more.md)
 * [three](three.md)
   * [SDWebImage](three/sdwebimage.md)
 
