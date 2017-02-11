@@ -58,6 +58,7 @@
           * [layoutSubviews](layoutsubviews.md)
         * [1.2 storyboard、xib](storyboard.md)
         * [自定义Cell的优化](自定义cell的优化.md)
+  * [Device](device.md)
 * [UI提高](ui提高.md)
   * [NSAttributedString描述](at.md)
   * [多控制器管理](多控制器管理.md)
