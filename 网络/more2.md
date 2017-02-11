@@ -211,7 +211,7 @@ static XMGTools *_instance;
 ```
 
 ### 2.NSOperation
-> 01 NSOperation本身是抽象类，是对GCD的包装；只能由它的子类封装任务，必须和NSOperationQueue(并发)结合使用实现多线程并发
+> 01 NSOperation本身是抽象类，是对GCD的包装，作用调度任务；只能由它的子类封装任务，必须和NSOperationQueue(并发)结合使用实现多线程并发
   02 三个子类分别是：NSBlockOperation、NSInvocationOperation以及自定义继承自NSOperation的类内部重写main方法封装任务
 
 （3）相关代码
@@ -224,8 +224,8 @@ static XMGTools *_instance;
      第二个参数：该操作要调用的方法，最多接受一个参数
      第三个参数：调用方法传递的参数，如果方法不接受参数，那么该值传nil
      */
-    NSInvocationOperation *operation = [[NSInvocationOperation alloc]
-                                        initWithTarget:self selector:@selector(run) object:nil];
+     /**************设计模式：目标操作******************/
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc]                                     initWithTarget:self selector:@selector(run) object:nil];
 
     //2.启动操作
     [operation start];
