@@ -22,3 +22,14 @@
     //4.把上下文的内容显示到View上(渲染到View的layer)(stroke fill)
     CGContextStrokePath(ctx);
 ```
+
+1.框架坐标系
+
+首先让我们先来看看CoreText坐标系和UIKit坐标系的不同
+　　![](/assets/Snip25600215_1.png)
+>对UIView上下文进行变形,坐标系不再是左上，现在是左下了
+
+```
+    //CGContextScaleCTM(ctx, 0.5, .5);
+    CGContextTranslateCTM(ctx, 40, 70);
+```    
