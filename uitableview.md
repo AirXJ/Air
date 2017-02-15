@@ -40,9 +40,29 @@
 
 
 ```
-//右边索引 字节数(如果不实现 就不显示右侧索引)
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return sectionTitleArray;
+//右边索引 表头数(如果不实现 就不显示右侧索引)
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    NSMutableArray *charArr = [NSMutableArray array];
+    //和下面等价[charArr addObject:@"{search}"];
+    [charArr addObject:UITableViewIndexSearch];
+    
+    char a[27];
+    for(int i=0;i<26;i++)  //大写字母
+    {
+        a[i] = 'A'+ i;
+        if (i == 25) {
+            a[i+1] = '\0';
+        }
+    }
+     
+    NSString *str = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+    //改成26就是字母大写的
+    for (int i = 0; i < 9; i++) {
+        NSString *strA = [str substringWithRange:NSMakeRange(i, 1)];
+        [charArr addObject:strA];
+    }
+    
+    return charArr;
 }
 
 //点击右侧索引表项时调用
