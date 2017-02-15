@@ -35,3 +35,24 @@
 // NSLog(@"取消选中了:%ld",indexPath.row);
 }
 ```
+### UITableViewDataSource数据源
+#####检索索引
+
+
+```
+//右边索引 字节数(如果不实现 就不显示右侧索引)
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return sectionTitleArray;
+}
+
+//点击右侧索引表项时调用
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    NSString *key = [sectionTitleArray objectAtIndex:index];
+    NSLog(@"sectionForSectionIndexTitle key=%@",key);
+    if (key == UITableViewIndexSearch) {
+        [listTableView setContentOffset:CGPointZero animated:NO];
+        return NSNotFound;
+         }
+    return index;
+}
+```
