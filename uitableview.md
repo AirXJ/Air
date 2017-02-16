@@ -40,8 +40,7 @@
 
 
 ```
-sectionTitleArray = [NSArray arrayWithObjects:@"1-10",@"11-20",@"21-30",@"31-40",@"41-50",@"51-60",@"61-70",@"71-80",@"81-90",@"91-100", nil];
-//右边索引 块表头数(如果不实现 就不显示右侧索引)
+//右边索引 表头数(如果不实现 就不显示右侧索引)
 - (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
     NSMutableArray *charArr = [NSMutableArray array];
     //和下面等价[charArr addObject:@"{search}"];
@@ -62,7 +61,7 @@ sectionTitleArray = [NSArray arrayWithObjects:@"1-10",@"11-20",@"21-30",@"31-40"
         NSString *strA = [str substringWithRange:NSMakeRange(i, 1)];
         [charArr addObject:strA];
     }
-    
+  
     return charArr;
 }
 
@@ -70,22 +69,28 @@ sectionTitleArray = [NSArray arrayWithObjects:@"1-10",@"11-20",@"21-30",@"31-40"
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
     //传入 section title 和index 返回其应该对应的session序号。
     //一般不需要写 默认section index 顺序与section对应。除非 你的section index数量或者序列与section不同才用修改
+    //index是块表头到个数
+    NSLog(@"=======%zd",index);
     NSString *key = nil;
     if (index>1) {
+        //－2才能定位到最前，－1少一个
          key = [sectionTitleArray objectAtIndex:index-2];
         NSLog(@"sectionForSectionIndexTitle key=%@",key);
+        //这里return方法并未结束，有些诡异，函数肯定不会回来，方法下面还要调用。
          return index-2;
     }
     
     
     if (key == UITableViewIndexSearch) {
         key = [sectionTitleArray objectAtIndex:index];
+        //这句不会打印，诡异
         NSLog(@"sectionForSectionIndexTitle key=%@",key);
-        //动画跳到起始位置，没有找到对应块表头标题
+        //动画跳到起始位置，没有找到对应标头标题
         [listTableView setContentOffset:CGPointZero animated:NO];
         return NSNotFound;
     }
-    
+    //这里会进来2次
+    NSLog(@"=======%zd",index);
     return NSNotFound;
 }
 ```
