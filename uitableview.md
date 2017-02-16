@@ -40,7 +40,8 @@
 
 
 ```
-//右边索引 表头数(如果不实现 就不显示右侧索引)
+sectionTitleArray = [NSArray arrayWithObjects:@"1-10",@"11-20",@"21-30",@"31-40",@"41-50",@"51-60",@"61-70",@"71-80",@"81-90",@"91-100", nil];
+//右边索引 块表头数(如果不实现 就不显示右侧索引)
 - (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
     NSMutableArray *charArr = [NSMutableArray array];
     //和下面等价[charArr addObject:@"{search}"];
@@ -54,10 +55,10 @@
             a[i+1] = '\0';
         }
     }
-     
+    
     NSString *str = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
     //改成26就是字母大写的
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < 11; i++) {
         NSString *strA = [str substringWithRange:NSMakeRange(i, 1)];
         [charArr addObject:strA];
     }
@@ -67,15 +68,24 @@
 
 //点击右侧索引表项时调用
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
-     //传入 section title 和index 返回其应该对应的session序号。  
-    //一般不需要写 默认section index 顺序与section对应。除非 你的section index数量或者序列与section不同才用修改 
+    //传入 section title 和index 返回其应该对应的session序号。
+    //一般不需要写 默认section index 顺序与section对应。除非 你的section index数量或者序列与section不同才用修改
+    NSString *key = nil;
+    if (index>1) {
+         key = [sectionTitleArray objectAtIndex:index-2];
+        NSLog(@"sectionForSectionIndexTitle key=%@",key);
+         return index-2;
+    }
     
-    NSString *key = [sectionTitleArray objectAtIndex:index];
-    NSLog(@"sectionForSectionIndexTitle key=%@",key);
+    
     if (key == UITableViewIndexSearch) {
+        key = [sectionTitleArray objectAtIndex:index];
+        NSLog(@"sectionForSectionIndexTitle key=%@",key);
+        //动画跳到起始位置，没有找到对应块表头标题
         [listTableView setContentOffset:CGPointZero animated:NO];
         return NSNotFound;
-         }
-    return index;
+    }
+    
+    return NSNotFound;
 }
 ```
