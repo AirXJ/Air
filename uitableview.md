@@ -67,6 +67,9 @@
 
 //点击右侧索引表项时调用
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+     //传入 section title 和index 返回其应该对应的session序号。  
+    //一般不需要写 默认section index 顺序与section对应。除非 你的section index数量或者序列与section不同才用修改 
+    
     NSString *key = [sectionTitleArray objectAtIndex:index];
     NSLog(@"sectionForSectionIndexTitle key=%@",key);
     if (key == UITableViewIndexSearch) {
