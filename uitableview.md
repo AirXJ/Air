@@ -68,7 +68,7 @@
 //点击右侧索引表项时调用，一般不需要写默认直接返回index，除非数组和index不等，需要修改
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
     //传入 section title 和index 返回其应该对应的session序号。
-    //index是块表头到个数
+    //index是块表头的个数
     NSLog(@"=======%zd",index);
     NSString *key = nil;
     if (index>1) {
