@@ -19,7 +19,7 @@ option 点击Finder前往才能出现资源库
  command option = 故事板自动对齐约束
  command shift K 清空Xcode缓存，不行删除app再启动
  command shift H 退出app
- 把xcode文件拖到页面也能显示
+ 把xcode文件拖到页面也能显示,不过要拖到状态栏上，不让拖的是路径
 ```
 
 ---
