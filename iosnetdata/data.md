@@ -1,6 +1,6 @@
-\#第四天
+#第四天
 
-\#\#\#0 补充（static）
+###0 补充（static）
 
 ```
 static关键字会在声明变量的时候分配内存，在程序运行期间只分配一次内存。之后再访问时，实际都是在访问原先分配的内存
@@ -10,7 +10,7 @@ static关键字会在声明变量的时候分配内存，在程序运行期间�
 如果使用static来修饰全局变量，那么表示该全局变量只在本文件中有效，外界无法使用extern来引用。static变量的作用域被限制在定义变量的当前文件中，其它文件是不能访问的。
 ```
 
-\#\#\#\#1.NSURLConnection使用
+####1.NSURLConnection使用
 
 * 1.1 NSURLConnection同步请求（GET）
 
@@ -28,20 +28,20 @@ static关键字会在声明变量的时候分配内存，在程序运行期间�
 
 （2）相关代码
 
-\`\`\`objc
+```objc
 
 //1.确定请求路径
 
 ```
-NSURL \*url = \[NSURL URLWithString:@"http://120.25.226.186:32812/login?username=520it&pwd=520it&type=XML"\];
+NSURL *url = [NSURL URLWithString:@"http://120.25.226.186:32812/login?username=520it&pwd=520it&type=XML"];
 ```
 
-//    NSURL \*url = \[NSURL URLWithString:@"[http://120.25.226.186:32812/video?type=XML"\](http://120.25.226.186:32812/video?type=XML"\)\];
+//    NSURL *url = [NSURL URLWithString:@"[http://120.25.226.186:32812/video?type=XML"](http://120.25.226.186:32812/video?type=XML")];
 
 ```
 //2.创建一个请求对象
 
-NSURLRequest \*request = \[NSURLRequest requestWithURL:url\];
+NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
 
 
@@ -57,7 +57,7 @@ NSError \*error = nil;
 
 
 
-/\*
+/*
 
  第一个参数：请求对象
 
@@ -65,20 +65,20 @@ NSError \*error = nil;
 
  第三个参数：错误信息，如果请求失败，则error有值
 
- \*/
+ */
 
  //该方法是阻塞式的，会卡住线程
 
-NSData \*data = \[NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error\];
+NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 
 
 
 //4.解析服务器返回的数据
 
-NSString \*str = \[\[NSString alloc\]initWithData:data encoding:NSUTF8StringEncoding\];
+NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding\];
 ```
 
-\`\`\`
+```
 
 * 1.2 NSURLConnection异步请求（GET-SendAsync）
 
@@ -90,24 +90,24 @@ NSString \*str = \[\[NSString alloc\]initWithData:data encoding:NSUTF8StringEnco
 
 （2）相关代码
 
-\`\`\`objc
+```objc
 
 //1.确定请求路径
 
 ```
-NSURL \*url = \[NSURL URLWithString:@"http://120.25.226.186:32812/login?username=520it&pwd=520it"\];
+NSURL *url = [NSURL URLWithString:@"http://120.25.226.186:32812/login?username=520it&pwd=520it"];
 
 
 
 //2.创建一个请求对象
 
-NSURLRequest \*request = \[NSURLRequest requestWithURL:url\];
+NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
 
 
 //3.把请求发送给服务器,发送一个异步请求
 
-/\*
+/*
 
  第一个参数：请求对象
 
@@ -121,26 +121,26 @@ NSURLRequest \*request = \[NSURLRequest requestWithURL:url\];
 
     connectionError：错误信息，如果请求失败，那么该参数有值
 
- \*/
+ */
 
-\[NSURLConnection sendAsynchronousRequest:request queue:\[\[NSOperationQueue alloc\]init\] completionHandler:^\(NSURLResponse \* \_\_nullable response, NSData \* \_\_nullable data, NSError \* \_\_nullable connectionError\) {
+[NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc]init] completionHandler:^(NSURLResponse * __nullable response, NSData * __nullable data, NSError \* __nullable connectionError) {
 
 
 
     //4.解析服务器返回的数据
 
-    NSString \*str = \[\[NSString alloc\]initWithData:data encoding:NSUTF8StringEncoding\];
+    NSString *str = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
 
     //转换并打印响应头信息
 
-    NSHTTPURLResponse \*r = \(NSHTTPURLResponse \*\)response;
+    NSHTTPURLResponse *r = (NSHTTPURLResponse *)response;
 
-    NSLog\(@"--%zd---%@--",r.statusCode,r.allHeaderFields\);
+    NSLog(@"--%zd---%@--",r.statusCode,r.allHeaderFields);
 
-}\];
+}];
 ```
 
-\`\`\`
+```
 
 * 1.3 NSURLConnection异步请求（GET-代理）
 
@@ -160,20 +160,20 @@ NSURLRequest \*request = \[NSURLRequest requestWithURL:url\];
 
 （2）设置代理的几种方法
 
-\`\`\`objc
+```objc
 
-/\*
+/*
 
 ```
  设置代理的第一种方式：自动发送网络请求
 
- \[\[NSURLConnection alloc\]initWithRequest:request delegate:self\];
+ [[NSURLConnection alloc]initWithRequest:request delegate:self];
 
- \*/
+ */
 
 
 
-/\*
+/*
 
  设置代理的第二种方式：
 
@@ -183,34 +183,34 @@ NSURLRequest \*request = \[NSURLRequest requestWithURL:url\];
 
  第三个参数：是否马上发送网络请求，如果该值为YES则立刻发送，如果为NO则不会发送网路请求
 
- NSURLConnection \*conn = \[\[NSURLConnection alloc\]initWithRequest:request delegate:self startImmediately:NO\];
+ NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self startImmediately:NO];
 
 
 
  //调用该方法控制网络请求的发送
 
- \[conn start\];
+ [conn start];
 
- \*/
+ */
 
 
 
 //设置代理的第三种方式：使用类方法设置代理，会自动发送网络请求
 
-NSURLConnection \*conn = \[NSURLConnection connectionWithRequest:request delegate:self\];
+NSURLConnection *conn = [NSURLConnection connectionWithRequest:request delegate:self];
 
 //取消网络请求
 
-//\[conn cancel\];
+//[conn cancel];
 ```
 
-\`\`\`
+```
 
 （3）相关的代理方法
 
-\`\`\`objc
+```objc
 
-/\*
+/*
 
 1.当接收到服务器响应的时候调用
 
@@ -218,11 +218,11 @@ NSURLConnection \*conn = \[NSURLConnection connectionWithRequest:request delegat
 
 第二个参数response：接收到的服务器返回的响应头信息
 
-\*/
+*/
 
-* \(void\)connection:\(nonnull NSURLConnection \*\)connection didReceiveResponse:\(nonnull NSURLResponse \*\)response
+- (void)connectio\n:(nonnull NSURLConnection *)connection didReceiveResponse:(nonnull NSURLResponse *)response
 
-/\*
+/*
 
 2.当接收到数据的时候调用，该方法会被调用多次
 
@@ -230,35 +230,35 @@ NSURLConnection \*conn = \[NSURLConnection connectionWithRequest:request delegat
 
 第二个参数data：本次接收到的服务端返回的二进制数据（可能是片段）
 
-\*/
+*/
 
-* \(void\)connection:\(nonnull NSURLConnection \*\)connection didReceiveData:\(nonnull NSData \*\)data
+- (void)connection:(nonnull NSURLConnection *)connection didReceiveData:(nonnull NSData *)data
 
-/\*
+/*
 
 3.当服务端返回的数据接收完毕之后会调用
 
 通常在该方法中解析服务器返回的数据
 
-\*/
+*/
 
--\(void\)connectionDidFinishLoading:\(nonnull NSURLConnection \*\)connection
+-(void)connectionDidFinishLoading:(nonnull NSURLConnection *)connection
 
-/\*4.当请求错误的时候调用（比如请求超时）
+/*4.当请求错误的时候调用（比如请求超时）
 
 第一个参数connection：NSURLConnection对象
 
 第二个参数：网络请求的错误信息，如果请求失败，则error有值
 
-\*/
+*/
 
-* \(void\)connection:\(nonnull NSURLConnection \*\)connection didFailWithError:\(nonnull NSError \*\)error
+* \(void\)connection:\(nonnull NSURLConnection \*\)connection didFailWithError:(\()nonnull NSErro\*\ *)error
 
-\`\`\`
+```
 
 （4）其它知识点
 
-\`\`\`objc
+```objc
 
 ```
 01 关于消息弹窗第三方框架的使用
@@ -272,7 +272,7 @@ NSURLConnection \*conn = \[NSURLConnection connectionWithRequest:request delegat
 - \(NSString \*\)substringWithRange:\(NSRange\)range;
 ```
 
-\`\`\`
+```
 
 * 1.4 NSURLConnection发送POST请求
 
