@@ -104,6 +104,7 @@
         * [03-转场动画CATransition](catransition.md)
         * [04-CAAnimationGroup](04-caanimationgroup.md)
         * [核心动画代理](核心动画代理.md)
+  * [自定义过度效果和类型](aaaaaa.md)
 * [UI补充](ui补充.md)
   * [Stack View](stack-view.md)
 * [Json序列化](json序列化.md)
