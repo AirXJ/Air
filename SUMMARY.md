@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [c](c.md)
 * [学习资源](资源地质.md)
 * [单词积累](单词积累.md)
 * [犯错总结](自己犯过的错误.md)
@@ -107,11 +108,11 @@
   * [自定义过度效果和类型](aaaaaa.md)
 * [UI补充](ui补充.md)
   * [Stack View](stack-view.md)
-* [Json序列化](json序列化.md)
 * [源代码管理和终端命令](源代码管理.md)
   * [GIT源代码管理](git源代码管理.md)
   * [SVN源代码管理](svn源代码管理.md)
   * [Cocoapods](cocoapods.md)
+* [Json序列化](json序列化.md)
 * [Swift](swift入门.md)
   * [0.1.常量&变量](常量变量.md)
   * [0.2.逻辑分支](02逻辑分支.md)
