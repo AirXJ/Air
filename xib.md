@@ -45,7 +45,7 @@ ViewController *vc = [[ViewController alloc] initWithNibName:@"VC" bundle:nil];
 * `initWithCoder:`如果View从xib中加载,就会调用此方法[^如果子控件是从xib中创建,是处于未唤醒状态
   ]
 
-* `- (void)awakeFromNib`，从xib中唤醒,添加 xib中创建的子控件 的子控件用此方法，也可以添加xib的子控件
+* `- (void)awakeFromNib`，从xib中唤醒,添加 xib中用代码创建的子控件 的子控件用此方法，也可以添加xib的子控件
 
 
 
