@@ -1,4 +1,4 @@
-swift循环有标记, 循环或者条件选择后面可以再加个条件;判断条件不用再加括号
+##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件;判断条件不用再加括号**_
 
 ```
 //如果您想操纵外部循环, 则需要使用标记语句
@@ -32,7 +32,7 @@ while aLotOfAs.characters.count < 10
  switch语句可以处理任何数据类型
 ```
 
-swift常量在棧中，出了｛｝号就跳出了作用域
+* ##### _**swift常量在棧中，出了｛｝号就跳出了作用域**_
 
 ```
 let firstName = "Matt"
@@ -43,7 +43,6 @@ let firstName = "Matt"
      let lastName = "Wenderlich"
  }
  let fullName = firstName + " " + lastName
-
 ```
 
 
