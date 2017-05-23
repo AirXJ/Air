@@ -45,7 +45,7 @@ let firstName = "Matt"
  let fullName = firstName + " " + lastName
 ```
 
-降序stride\(from: 10, to/through: 22, by: 4\)
+降序stride\(from: 10, to/through: 22, by: 4\)like 10..&lt;22/10...22
 
 ```
 //for index in stride(from: 10, to: 22, by: 4)不包括22，下面的包括9
