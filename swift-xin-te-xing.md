@@ -32,7 +32,19 @@ while aLotOfAs.characters.count < 10
  switch语句可以处理任何数据类型
 ```
 
-switch
+swift常量在棧中，出了｛｝号就跳出了作用域
+
+```
+let firstName = "Matt"
+
+ if firstName == "Matt" {
+     let lastName = "Galloway"
+ } else if firstName == "Ray" {
+     let lastName = "Wenderlich"
+ }
+ let fullName = firstName + " " + lastName
+
+```
 
 
 
