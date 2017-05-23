@@ -17,14 +17,11 @@ rowLoop: for row in 0..<8 {
 for i in 1...count where i % 2 == 1
 switch coordinates {
 case let (x, y, z) where x == y && y == z:
-
 ```
 
 ```
 while aLotOfAs.characters.count < 10
 ```
-
-
 
 ```
  Switch语句要求必须要有满足的情况,满足这个的前提下可以没有default；
@@ -33,9 +30,9 @@ while aLotOfAs.characters.count < 10
  fallthrough继续执行下面的语句
  break默认不需要,如果贯穿了也可提前跳出
  switch语句可以处理任何数据类型
- 
- 
 ```
+
+switch
 
 
 
