@@ -45,5 +45,14 @@ let firstName = "Matt"
  let fullName = firstName + " " + lastName
 ```
 
+降序
+
+```
+//for index in stride(from: 10, to: 22, by: 4)不包括22，下面的包括9
+for index in stride(from: 10, through: 9, by: -0.1) {
+  print(index)
+}
+```
+
 
 
