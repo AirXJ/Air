@@ -3,10 +3,20 @@
 ```
 let characterA: Character = "a"
 let stringDog: String = "Dog"
+let messageInOne = "Hello my name is \(name)!"
+var message = "Hello" + " my name is "
+
+//运算必须同类型
+let hourlyRate: Double = 19.5
+let hoursWorked: Int = 10
+let totalCost: Double = hourlyRate * Double(hoursWorked)
 
 var integer: Int = 100
 integer = Int(decimal)
 let actuallyDouble3 = 3 as Double
+
+// TUPLES
+let coordinates: (Int, Int) = (2, 3)
 ```
 
 ##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件; 判断条件不用再加括号，dowhile 现在变成repeat**_
