@@ -93,12 +93,8 @@ if let authorName = authorName, let authorAge = authorAge, authorAge >= 40 {
   print("No author or no age or age less than 40.")
 }
 
-//Nil coalescing
- optionalInt = nil
- mustHaveResult = optionalInt ?? 0
- var optionalInt: Int? = 10
- var mustHaveResult = optionalInt ?? 0
- 
+
+
 //guard statement else条件必须return，必须用在函数里
 func maybePrintSides(shape: String) {
 guard let sides = calculateNumberOfSides(shape: shape) else {
@@ -107,6 +103,12 @@ guard let sides = calculateNumberOfSides(shape: shape) else {
   }
    print("A \(shape) has \(sides) sides.")
 }
+
+//Nil coalescing
+ optionalInt = nil
+ mustHaveResult = optionalInt ?? 0
+ var optionalInt: Int? = 10
+ var mustHaveResult = optionalInt ?? 0
 
 //强制解包
 var authorName: String? = "Matt Galloway"
