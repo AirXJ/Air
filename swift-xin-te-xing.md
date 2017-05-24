@@ -6,13 +6,10 @@ let stringDog: String = "Dog"
 let messageInOne = "Hello my name is \(name)!"
 var message = "Hello" + " my name is "
 
-//运算必须同类型
+//运算必须同类型, 类型转换
 let hourlyRate: Double = 19.5
 let hoursWorked: Int = 10
 let totalCost: Double = hourlyRate * Double(hoursWorked)
-
-var integer: Int = 100
-integer = Int(decimal)
 let actuallyDouble3 = 3 as Double
 
 // TUPLES
