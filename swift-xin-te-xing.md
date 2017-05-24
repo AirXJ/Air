@@ -93,9 +93,18 @@ if let authorName = authorName, let authorAge = authorAge, authorAge >= 40 {
   print("No author or no age or age less than 40.")
 }
 
+func maybePrintSides(shape: String) {  
+guard let sides = calculateNumberOfSides(shape: shape) else {
+    print("I don't know the number of sides for \(shape).")
+    return
+  }
+   print("A \(shape) has \(sides) sides.")
+}
+
 //强制解包
 var authorName: String? = "Matt Galloway"
 var unwrappedAuthorName = authorName!
+String(authorName)
 ```
 
 
