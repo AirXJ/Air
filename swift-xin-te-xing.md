@@ -12,7 +12,8 @@ let hoursWorked: Int = 10
 let totalCost: Double = hourlyRate * Double(hoursWorked)
 let actuallyDouble3 = 3 as Double
 
-// 新类型, 元组TUPLES
+// 新类型, 元组TUPLES、范围range
+let range = 1...10
 let coordinates: (Int, Int) = (2, 3)
 let coordinatesNamed = (x: 2, y: 3)
 let x2 = coordinatesNamed.x + coordinatesNamed.0
