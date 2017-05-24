@@ -1,4 +1,15 @@
-##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件;判断条件不用再加括号，dowhile 现在变成repeat**_
+* ##### swift变量在声明的时候必须有值, 一般可以不写类型, 他自己可以推断是什么变量类型,当你想表达一个单字符类型的时候必须带上变量类型
+
+```
+let characterA: Character = "a"
+let stringDog: String = "Dog"
+
+var integer: Int = 100
+integer = Int(decimal)
+let actuallyDouble3 = 3 as Double
+```
+
+##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件; 判断条件不用再加括号，dowhile 现在变成repeat**_
 
 ```
 //如果您想操纵外部循环, 则需要使用标记语句
