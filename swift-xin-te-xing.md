@@ -14,6 +14,15 @@ let actuallyDouble3 = 3 as Double
 
 // 新类型, 元组TUPLES
 let coordinates: (Int, Int) = (2, 3)
+let coordinatesNamed = (x: 2, y: 3)
+let x2 = coordinatesNamed.x + coordinatesNamed.0
+let y2 = coordinatesNamed.y
+let coordinates3D = (x: 2, y: 3, z: 1)
+let (x3, y3, z3) = coordinates3D
+//let x3 = coordinates3D.x
+//let y3 = coordinates3D.y
+//let z3 = coordinates3D.z
+let (x4, y4, _) = coordinates3D
 ```
 
 ##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件; 判断条件不用再加括号，dowhile 现在变成repeat**_
