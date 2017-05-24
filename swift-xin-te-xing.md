@@ -85,5 +85,18 @@ for index in stride(from: 10, through: 9, by: -0.1) {
 
 * 可选值类型, swift新类型代表一个值可能为空
 
+```
+//可选类型绑定
+if let authorName = authorName, let authorAge = authorAge, authorAge >= 40 {
+  print("The author is \(authorName) who is \(authorAge) years old.")
+} else {
+  print("No author or no age or age less than 40.")
+}
+
+//强制解包
+var authorName: String? = "Matt Galloway"
+var unwrappedAuthorName = authorName!
+```
+
 
 
