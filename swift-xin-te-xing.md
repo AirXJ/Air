@@ -9,6 +9,7 @@ var message = "Hello" + " my name is "
 //运算必须同类型, 类型转换
 let hourlyRate: Double = 19.5
 let hoursWorked: Int = 10
+//某些情况下，类型转换可能转出来时可选值类型，需要采用可选类型绑定技术（if去解包）
 let totalCost: Double = hourlyRate * Double(hoursWorked)
 let actuallyDouble3 = 3 as Double
 
