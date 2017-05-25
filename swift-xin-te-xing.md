@@ -127,5 +127,22 @@ allZerosInferred[0] = 2
 allZerosInferred
 ```
 
+* 函数
+
+```
+// 可变参数被认为是数组，在函数里只能有一个可变参数
+// 可变参数被认为是数组，在函数里只能有一个可变参数
+func sum(of numbers: Int...) -> Int {
+  var total = 0
+  for number in numbers {
+    total += number
+  }
+  return total
+}
+sum(of: 1, 6, 2, -3)
+
+
+```
+
 
 
