@@ -116,5 +116,16 @@ var unwrappedAuthorName = authorName!
 String(authorName)
 ```
 
+* 可变数组和不可变数组Mutable versus immutable arrays
+
+```
+//you must declare it as either a constant or a variable
+let allZeros = [Int](repeating: 0, count: 5)
+// > [0, 0, 0, 0, 0]
+var allZerosInferred = Array(repeating: 0, count: 5)
+allZerosInferred[0] = 2
+allZerosInferred
+```
+
 
 
