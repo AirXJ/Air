@@ -95,7 +95,7 @@ if let authorName = authorName, let authorAge = authorAge, authorAge >= 40 {
 
 
 
-//guard statement else条件必须return，必须用在函数里
+//guard statement else条件必须return
 func maybePrintSides(shape: String) {
 guard let sides = calculateNumberOfSides(shape: shape) else {
     print("I don't know the number of sides for \(shape).")
