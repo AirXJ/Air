@@ -141,5 +141,16 @@ func sum(of numbers: Int...) -> Int {
 sum(of: 1, 6, 2, -3)
 ```
 
+* 闭包
+
+```
+//闭包和函数的区别闭包的参数没有外部名称，并且参数在打括号内，return前面有关键字in
+var multiplyClosure: (Int, Int) -> Int
+
+multiplyClosure = { (a: Int, b: Int) -> Int in
+  return a * b
+}
+```
+
 
 
