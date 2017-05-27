@@ -150,6 +150,21 @@ var multiplyClosure: (Int, Int) -> Int
 multiplyClosure = { (a: Int, b: Int) -> Int in
   return a * b
 }
+//函数尾部闭包语法: 只有当最后一个参数是闭包的时候，我们可以把闭包写到函数外面
+operateOnNumbers(4, 2) {
+  $0 + $1
+}
+
+// SORTING,集合类型的很多函数都可以有2种写法，一种常用，另一种尾部闭包写法，尾部闭包可以重写函数。
+let names = ["ZZZZZZ", "BB", "A", "CCCC", "EEEEE"]
+names.sorted()
+//func sorted(by areInIncreasingOrder: (Element, Element) -> Bool) -> [Element]
+let sortedByLength = names.sorted {
+  $0.characters.count > $1.characters.count
+}
+//let sortedByLength = names.sorted {(Element1, Element2) -> Bool in
+//    return Element1.characters.count > Element2.characters.count
+//}
 ```
 
 
