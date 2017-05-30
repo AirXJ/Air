@@ -1,4 +1,4 @@
-* ##### swift变量在声明的时候必须有值, _**一般**_可以不写类型, 他自己可以推断是什么变量类型;  
+* ##### swift变量在声明的时候必须有值, _**一般**_可以不写类型, 他自己可以推断是什么变量类型;
 * ##### 所有的基本类型都是结构体,值传递\(自带拷贝行为\)
 
 ```
@@ -96,7 +96,7 @@ if let authorName = authorName, let authorAge = authorAge, authorAge >= 40 {
 
 
 
-//guard statement else条件必须return
+//guard statement else条件必须return, 只能在函数中使用
 func maybePrintSides(shape: String) {
 guard let sides = calculateNumberOfSides(shape: shape) else {
     print("I don't know the number of sides for \(shape).")
