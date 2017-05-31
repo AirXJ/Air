@@ -28,7 +28,7 @@ let (x3, y3, z3) = coordinates3D//快速赋值
 let (x4, y4, _) = coordinates3D
 ```
 
-##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件; 判断条件不用再加括号，dowhile 现在变成repeat**_
+##### _**swift循环有标记, 循环或者条件选择后面可以再加个条件; 判断条件不用再加括号，dowhile 现在变成repeat;**_ if case for后面第二层都可以跟where
 
 ```
 //如果您想操纵外部循环, 则需要使用标记语句
